@@ -694,6 +694,17 @@ footer .footer__copyright {
   main .banniere__texte--l {
     font-size: 30px;
   }
+  main .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .presentation__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   main .realisation {
     display: flex;
     flex-direction: column;
@@ -705,5 +716,48 @@ footer .footer__copyright {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  main .comp__icones {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+  main .rounded-circle {
+    margin-bottom: 20px;
+  }
+  main .educ h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  main .exp h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  main .exp__pro {
+    margin-left: 25px;
+  }
+  main .exp__synergie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer ul li {
+    justify-content: center;
+  }
+  footer .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer__nav--menu, footer .footer__nav--contact, footer .footer__nav--reseauxs {
+    padding-bottom: 30px;
+    text-align: center;
   }
 }/*# sourceMappingURL=assets.css.map */

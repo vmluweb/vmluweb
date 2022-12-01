@@ -665,16 +665,6 @@ footer {
         margin-top: 30px;
       }
 
-      // ul {
-      //   display: flex;
-      //   flex-flow: column wrap;
-      // }
-
-      // ul li i {
-      //   padding: 5px;
-      //   align-self: center;
-      // }
-
       i:hover {
         color: $thirdColor;
       }
@@ -765,6 +755,7 @@ footer {
         align-items: center;
       }
     }
+    
   }
 }
 
@@ -863,6 +854,23 @@ footer {
       font-size: 30px;
     }
 
+.presentation{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container{
+    display: flex;
+      flex-direction: row;
+      justify-content: center;
+    // img{
+      
+    // }
+}
+   
+  }
     .realisation {
       display: flex;
       flex-direction: column;
@@ -874,6 +882,61 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+    }
+    .comp__icones{
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 10px;
+    }
+
+    .rounded-circle{
+      margin-bottom: 20px;
+    }
+
+    .educ{
+      h4{
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    
+    .exp{
+
+      h4{
+        font-size:18px;
+        text-align: center;
+      }
+      &__pro{
+        margin-left: 25px;
+      }
+      &__synergie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+    }
+  }
+
+  footer {
+    flex-wrap: wrap;
+
+    h5{
+      text-align: center;
+    }
+
+    ul li{
+      justify-content: center;
+    }
+    .footer__nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &--menu, &--contact, &--reseauxs{
+        padding-bottom: 30px;
+        text-align: center;
       }
     }
   }
