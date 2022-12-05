@@ -99,8 +99,9 @@ html {
   }
   .navbar__menu--burger {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
   }
   #burger-menu {
     cursor: pointer;
@@ -278,13 +279,12 @@ main h3 {
 }
 .realisation__cartes {
   display: flex;
-  width: 420px;
-  height: 260px;
+  max-width: 420px;
+  max-height: 260px;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  border: 2px solid;
-  border-color: rgb(0, 52, 82);
+  box-shadow: 3px 5px 5px rgb(0, 0, 0);
   border-radius: 8px;
   cursor: pointer;
   margin-bottom: 20px;
@@ -378,6 +378,7 @@ main h3 {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: center;
+  margin-bottom: 20px;
 }
 .comp__icones div {
   display: flex;
@@ -454,33 +455,43 @@ main h3 {
 }
 
 /* CAROUSEL */
-#carousel img {
-  width: 100%;
-  /* max-height: 15rem; */
-  max-height: 28rem;
+.carousel {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  padding: 0;
 }
-
-.carousel-control-prev {
-  left: 30px;
-  position: 0;
+.carousel__container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: carouselAnimation;
+          animation-name: carouselAnimation;
+  right: 0;
 }
-
-.carousel-control-next {
-  right: 30px;
-  position: 0;
+.carousel__container--element {
+  margin-right: 20px;
+  box-shadow: 3px 5px 5px rgb(0, 0, 0);
 }
-
-.bouton_carousel {
-  margin-top: 12rem;
-  max-height: 50px;
-  max-width: 50px;
-  position: 0;
+.carousel__container--element-img {
+  height: 300px;
+  width: 533px;
 }
-
-/* transition: transform 1s ease-in-out; */
-.carousel-control-prev-icon {
-  padding-left: 4rem;
-  position: 0;
+@-webkit-keyframes carouselAnimation {
+  100% {
+    transform: translateX(calc(-150% + 500px));
+  }
+}
+@keyframes carouselAnimation {
+  100% {
+    transform: translateX(calc(-150% + 500px));
+  }
 }
 
 /* FOOTER */
@@ -638,6 +649,9 @@ footer .footer__copyright {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 520px) {
+  header {
+    width: 100%;
+  }
   .navbar {
     display: flex;
     flex-direction: row;
@@ -688,7 +702,7 @@ footer .footer__copyright {
     margin-bottom: 0px;
   }
   main {
-    width: 95%;
+    width: 100%;
     overflow: visible;
   }
   main .banniere__texte--l {
@@ -702,8 +716,17 @@ footer .footer__copyright {
   }
   main .presentation__container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .presentation__image {
+    display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  main .presentation__image img {
+    height: 250px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0);
   }
   main .realisation {
     display: flex;
@@ -716,11 +739,18 @@ footer .footer__copyright {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 130px;
+    width: 220px;
+  }
+  main .realisation__cartes--media {
+    width: 100%;
+    overflow: hidden;
   }
   main .comp__icones {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
+    align-content: center;
   }
   main .rounded-circle {
     margin-bottom: 20px;
@@ -741,8 +771,16 @@ footer .footer__copyright {
     flex-direction: column;
     justify-content: center;
   }
+  main .carousel {
+    height: 150px;
+  }
+  main .carousel__container--element-img {
+    height: 150px;
+    width: 233px;
+  }
   footer {
-    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
   }
   footer h5 {
     text-align: center;

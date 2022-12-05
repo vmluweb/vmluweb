@@ -129,9 +129,9 @@ html {
   .navbar__menu--burger {
     // display: block;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    // overflow-y:scroll;
+    overflow: hidden;
   }
 
   #burger-menu {
@@ -345,13 +345,12 @@ main {
 
   &__cartes {
     display: flex;
-    width: 420px;
-    height: 260px;
+    max-width: 420px;
+    max-height: 260px;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-    border: 2px solid;
-    border-color: $secondaryColor;
+    box-shadow: 3px 5px 5px $fifthColor;
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 20px;
@@ -397,6 +396,7 @@ main {
       align-content: center;
       align-items: center;
     }
+
   }
 
   &__cartes--media {
@@ -411,6 +411,9 @@ main {
   }
 }
 
+// #objectcard {
+//   object-fit: fill;
+// }
 // DEBUT PRESENTATION
 // .carte__presentation{
 //   display: flex;
@@ -470,6 +473,7 @@ main {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center;
+    margin-bottom: 20px;
 
     div {
       display: flex;
@@ -559,33 +563,38 @@ main {
 
 /* CAROUSEL */
 
-#carousel img {
-  width: 100%;
-  /* max-height: 15rem; */
-  max-height: 28rem;
-}
+.carousel {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  padding: 0;
 
-.carousel-control-prev {
-  left: 30px;
-  position: 0;
-}
+  &__container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: carouselAnimation;
+    right: 0;
 
-.carousel-control-next {
-  right: 30px;
-  position: 0;
-}
+    &--element {
+      margin-right: 20px;
+      box-shadow: 3px 5px 5px $fifthColor;
 
-.bouton_carousel {
-  margin-top: 12rem;
-  max-height: 50px;
-  max-width: 50px;
-  position: 0;
-}
+      &-img {
+        height: 300px;
+        width: 533px;
+      }
+    }
+  }
 
-/* transition: transform 1s ease-in-out; */
-.carousel-control-prev-icon {
-  padding-left: 4rem;
-  position: 0;
+  @keyframes carouselAnimation {
+    100% {
+      transform: translateX(calc(-150% + 500px));
+    }
+  }
 }
 
 /* FOOTER */
@@ -643,7 +652,6 @@ footer {
 
       & a:hover {
         color: $thirdColor;
-        ;
       }
     }
 
@@ -755,7 +763,6 @@ footer {
         align-items: center;
       }
     }
-    
   }
 }
 
@@ -784,6 +791,10 @@ footer {
 }
 
 @media only screen and (min-width:0px) and (max-width:520px) {
+  header {
+    width: 100%;
+  }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -847,30 +858,38 @@ footer {
   }
 
   main {
-    width: 95%;
+    width: 100%;
     overflow: visible;
 
     .banniere__texte--l {
       font-size: 30px;
     }
 
-.presentation{
+    .presentation {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &__container{
-    display: flex;
-      flex-direction: row;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-    // img{
-      
-    // }
-}
-   
-  }
+      align-items: center;
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &__image {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+          height: 250px;
+          box-shadow: 3px 5px 5px $fifthColor;
+        }
+      }
+    }
+
     .realisation {
       display: flex;
       flex-direction: column;
@@ -882,59 +901,98 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 130px;
+        width: 220px;
+
+      }
+
+      &__cartes--media {
+        width: 100%;
+        overflow: hidden;
+
+        // #objectcard {
+        //   height: 220px;
+        //   width: 220px;
+        //   object-fit: cover;
+        // }
       }
     }
-    .comp__icones{
+
+    .comp__icones {
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 10px;
+      align-content: center;
     }
 
-    .rounded-circle{
+    .rounded-circle {
       margin-bottom: 20px;
     }
 
-    .educ{
-      h4{
+    .educ {
+      h4 {
         font-size: 18px;
         text-align: center;
       }
     }
-    
-    .exp{
 
-      h4{
-        font-size:18px;
+    .exp {
+
+      h4 {
+        font-size: 18px;
         text-align: center;
       }
-      &__pro{
+
+      &__pro {
         margin-left: 25px;
       }
-      &__synergie{
+
+      &__synergie {
         display: flex;
         flex-direction: column;
         justify-content: center;
       }
-      
+
+    }
+
+    .carousel {
+      height: 150px;
+
+      &__container {
+
+        &--element {
+          &-img {
+            height: 150px;
+            width: 233px;
+          }
+        }
+      }
     }
   }
 
-  footer {
-    flex-wrap: wrap;
 
-    h5{
+
+  footer {
+    width: 100%;
+    margin-top: 30px;
+
+    h5 {
       text-align: center;
     }
 
-    ul li{
+    ul li {
       justify-content: center;
     }
-    .footer__nav{
+
+    .footer__nav {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      &--menu, &--contact, &--reseauxs{
+
+      &--menu,
+      &--contact,
+      &--reseauxs {
         padding-bottom: 30px;
         text-align: center;
       }

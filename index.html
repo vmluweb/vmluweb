@@ -17,7 +17,7 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/js/burger-menu.js" defer></script>
-    <script src="./assets/js/overlay-cartes.js" defer></script>
+    <!-- <script src="./assets/js/overlay-cartes.js" defer></script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -48,10 +48,10 @@
                 <!-- DEBUT CONTENU BURGER MENU -->
                 <div id="menu">
                     <ul>
+                        <li><a href="#projet">Réalisations</a></li>
                         <li><a href="#presentation">Présentation</a></li>
                         <li><a href="#educ">Formation</a></li>
                         <li><a href="#comp">Compétences</a></li>
-                        <li><a href="#projet">Réalisations</a></li>
                         <li><a href="#exp">Expériences professionnelles</a></li>
                     </ul>
                 </div>
@@ -62,10 +62,10 @@
             <!-- DEBUT MENU CLASSIQUE -->
             <nav class="navbar__menu">
                 <ul>
+                    <li><a href="#projet"></a>Réalisations</li>
                     <li><a href="#presentation"></a>Présentation</li>
                     <li><a href="#educ"></a>Formation</li>
                     <li><a href="#comp"></a>Compétences</li>
-                    <li><a href="#projet"></a>Réalisations</li>
                     <li><a href="#exp"></a>Expériences professionnelles</li>
                 </ul>
             </nav>
@@ -96,8 +96,10 @@
 
             <!-- CARTE 1 PDF -->
             <div class="realisation__cartes">
-                <embed class="realisation__cartes--media" src="./assets/pdf/wireframe-ux-ui.pdf" width="420px"
-                    height="260px" type="application/pdf">
+                <div class="realisation__cartes--media">
+                    <embed src="assets/pdf/wireframe-ux-ui.pdf" width="400px" height="200px"
+                        type="application/pdf"/>
+                </div>
                 <div class="realisation__cartes--contenu">
                     <h2>Wireframe UX / UI | 09/2022</h2>
                     <p>BALSAMIQ</p>
@@ -324,33 +326,22 @@
             </div>
         </div>
 
-        <div id="carousel" class="carousel slide m-0 mb-5" data-bs-ride="carousel">
-            <div class="carousel-inner d-flex justify-content-center align-items-center">
-                <div class="carousel-item active m-0 w-100" data-bs-interval="7000">
-                    <img class="d-flex justify-content-center align-content-center align-self-end img-fluid w-100 p-3"
-                        src="./assets/images/randstad-human-forward.png" alt="Logo Randstad">
+        <div class="carousel">
+            <div class="carousel__container">
+                <div class="carousel__container--element">
+                    <img class="carousel__container--element-img" src="assets/images/randstad-human-forward.png"
+                        alt="Image Randstad">
                 </div>
-                <div class="carousel-item m-0 w-100" data-bs-interval="2000">
-                    <img class="d-flex justify-content-center align-content-center align-self-center img-fluid w-100 p-3"
-                        src="./assets/images/logo-praxion-recrutement.png" class="d-block w-100" alt="Logo Praxion">
+                <div class="carousel__container--element">
+                    <img class="carousel__container--element-img" src="assets/images/fid-assistance.png"
+                        alt="Image FIDELIA">
                 </div>
-                <div class="carousel-item m-0 w-100" data-bs-interval="2000">
-                    <img class="d-flex justify-content-center align-content-center align-self-center p-3"
-                        src="./assets/images/fid-assistance.png" class="d-block w-100" alt="Logo Fidelia Assistance">
+                <div class="carousel__container--element">
+                    <img class="carousel__container--element-img" src="assets/images/logo-praxion-recrutement.png"
+                        alt="Image PRAXION">
                 </div>
             </div>
-            <button class="carousel-control-prev bouton_carousel" type="button" data-bs-target="#carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next bouton_carousel" type="button" data-bs-target="#carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-
     </main>
 
     <!-- FOOTER -->
@@ -359,10 +350,11 @@
 
             <div class="footer__nav--menu">
                 <h5>Menu de navigation</h5>
+                <a href="#projet">Réalisations</a>
                 <a href="#presentation">Présentation</a>
                 <a href="#educ">Formation</a>
                 <a href="#comp">Compétences</a>
-                <a href="#projet">Réalisations</a>
+
                 <a href="#exp">Expériences professionnelles</a>
             </div>
 
@@ -371,7 +363,8 @@
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i>Localisation: Nîmes</li>
                     <li><i class="fa-solid fa-phone"></i>Téléphone: 06 98 71 24 33</li>
-                    <li><i class="fa-solid fa-envelope"></i><a href="vina.marieluce@gmail.com">Email: vina.marieluce@gmail.com</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="vina.marieluce@gmail.com">Email:
+                            vina.marieluce@gmail.com</a></li>
                     <li><i class="fa-solid fa-car"></i>Permis B et véhicule</li>
                 </ul>
             </div>
