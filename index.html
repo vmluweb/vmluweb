@@ -17,7 +17,6 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/js/burger-menu.js" defer></script>
-    <!-- <script src="./assets/js/overlay-cartes.js" defer></script> -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -86,259 +85,402 @@
 
     <!-- CONTENU PRINCIPAL -->
     <main>
+        <div class="main__content">
+            <!-- REALISATIONS -->
 
-        <!-- REALISATIONS -->
-
-        <h3 id="projet">Réalisations</h3>
-
-        <!-- CONTAINER PRINCIPAL REALISATIONS -->
-        <div class="realisation">
-
-            <!-- CARTE 1 PDF -->
-            <div class="realisation__cartes">
-                <div class="realisation__cartes--media">
-                    <embed src="assets/pdf/wireframe-ux-ui.pdf" width="400px" height="200px"
-                        type="application/pdf"/>
+            <h3 id="projet">Réalisations</h3>
+            <h5>Maquettage et Design UX/UI</h5>
+            <div class="realisation__maquette">
+                <!-- CARTE 3 IMAGE1 -->
+                <div class="realisation__cartes">
+                    <img id="maquette__uxui" class="realisation__cartes--media"
+                        src="./assets/images/maquettage-uxui.png" alt="Maquette-UX-UI">
+                    <div class="realisation__cartes--contenu">
+                        <h2>Maquette UX/UI | 09/2022</h2>
+                        <p>Balsamiq</p>
+                    </div>
                 </div>
-                <div class="realisation__cartes--contenu">
-                    <h2>Wireframe UX / UI | 09/2022</h2>
-                    <p>BALSAMIQ</p>
-                </div>
-            </div>
-
-            <!-- CARTE 2 VIDEO1 -->
-            <div id="carte2video1" class="realisation__cartes">
-                <video id="video1" class="realisation__cartes--media" controls>
-                    <source src="./assets/videos/systematic.mp4" alt="intégration web" type="video/mp4" />
-                </video>
-                <div id="carte2contenu" class="realisation__cartes--contenu">
-                    <h2>intégration Web | 09/2022</h2>
-                    <p>HTML & CSS</p>
-                </div>
-            </div>
-
-            <!-- CARTE 3 IMAGE1 -->
-            <div class="realisation__cartes">
-                <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/Maquette-UX-UI.jpg"
-                    alt="Maquette-UX-UI">
-                <div class="realisation__cartes--contenu">
-                    <h2>Maquette UX/UI | 09/2022</h2>
-                    <p>FIGMA</p>
-                </div>
-            </div>
-
-            <!-- CARTE 4 VIDEO2 -->
-            <div id="carte4video2" class="realisation__cartes">
-                <video id="video2" class="realisation__cartes--media" controls muted>
-                    <source src="./assets/videos/projet-e-commerce.mp4" alt="O'trink - HTML-CSS-PHP" type="video/mp4" />
-                </video>
-                <div id="carte4contenu" class="realisation__cartes--contenu">
-                    <h2>Projet e-commerce PrestaShop | 06/2022</h2>
-                    <p>O'́TRINK Création d'un thème et personnalisation d
-                        ́un site e-commerce pour un
-                        fabricant de jus HTML - CSS - PHP - PRESTASHOP</p>
-                </div>
-            </div>
-
-            <!-- CARTE 5 VIDEO3 -->
-            <div class="realisation__cartes">
-                <video id="video3" class="realisation__cartes--media" controls>
-                    <source src="./assets/videos/calculatrice-HTML-CSS-JS.mp4" alt="Projet JavaScript"
-                        type="video/mp4" />
-                </video>
-                <div id="carte5contenu" class="realisation__cartes--contenu">
-                    <h2>Projet calculatrice | 06/2022</h2>
-                    <p> HTML - CSS - JavaScript</p>
-                </div>
-            </div>
-
-            <!-- CARTE 6 VIDEO4 -->
-            <div class="realisation__cartes">
-                <video class="realisation__cartes--media" controls>
-                    <source src="./assets/videos/vml-digital.mp4" type="video/mp4">
-                </video>
-                <div class="realisation__cartes--contenu">
-                    <h2>Webmarketing | 06/2020</h2>
-                    <p>HTML - CSS - Marketing des réseaux sociaux -
-                        Créations de sites vitrines</p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- RESUME -->
-        <h3 id="presentation">Présentation</h3>
-        <div class="presentation row justify-content-center align-items-center align-self-center card mb-3 shadow-lg p-3 mb-5 bg-body rounded"
-            style="max-width: 540px;">
-            <div class="presentation__container row g-0">
-                <div class="presentation__image col-md-4">
-                    <img src="./assets/images/4.png" class="img-fluid rounded-start" alt="Photo de Vina">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">A propos</h5>
-                        <p class="card-text">Après un <span><strong>BAC+5 Sociologie</strong></span>, j'ai évolué
-                            principalement dans le domaine du recrutement. Curieuse et créative, j'ai été propulsé dans
-                            le monde
-                            de la Tech grâce à mes réalisations en e-commerce et en marketing digital.Je prépare
-                            actuellement un
-                            <em>Titre RNCP de
-                                Niveau 5 "Développeur Web et Web
-                                Mobile"</em> au sein de DIGINAMIC. Très motivée, je recherche activement une
-                            entreprise en <strong>contrat d'apprentissage</strong> pour m'accueillir.<em> Rythme:
-                            </em>75% du
-                            temps en entreprise et 25% en centre.
-                        </p>
+                <div class="realisation__cartes">
+                    <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/Maquette-UX-UI.jpg"
+                        alt="Maquette-UX-UI">
+                    <div class="realisation__cartes--contenu">
+                        <h2>Maquette UX/UI | 09/2022</h2>
+                        <p>FIGMA</p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Formation -->
-
-        <h3 id="educ">Formation</h3>
-        <div class="educ">
-            <div class="educ__globale">
-                <div class="educ__rncp">
-                    <h4>DEVELOPPEUR WEB ET WEB MOBILE <br>TITRE RNCP 5 - BAC+2 <br> DIGINAMIC MONTPELLIER | 09/2022
-                    </h4>
-                    <ul>
-                        <li>Modules : Fondamentaux du développement logiciel</li>
-                        <li>Communication en entreprise</li>
-                        <li>Gestion des données</li>
-                        <li>Maquettage d’un site web & développement Front-end</li>
-                        <li>Développement PHP</li>
-                        <li>Gestion de contenu et CMS</li>
-                        <li>HTML5, CSS3, Bootstrap, Javascript, ReactJS</li>
-                        <li>PHP, Wordpress, Ionic, SQL, Symfony, GIT, Scrum</li>
-                    </ul>
+            <h5>Intégration Web</h5>
+            <div class="realisation__integration">
+                <!-- CARTE 2 VIDEO1 -->
+                <div id="carte2video1" class="realisation__cartes">
+                    <video id="video1" class="realisation__cartes--media" controls>
+                        <source src="./assets/videos/systematic.mp4" alt="intégration web" type="video/mp4" />
+                    </video>
+                    <div id="carte2contenu" class="realisation__cartes--contenu">
+                        <h2>intégration Web | 09/2022</h2>
+                        <p>HTML & CSS</p>
+                    </div>
                 </div>
 
-                <div class="educ__php">
-                    <h4>DEVELOPPEUR PRESTASHOP E-COMMERCE <br> DIGINAMIC MONTPELLIER | 06/2022 </h4>
-                    <ul>
-                        <li><strong>Projet: O ́TRINK</strong><br>Création d'un thème et personnalisation d ́un site
-                            <br>e-
-                            commerce pour un fabricant de jus artisanaux <br>PRESTASHOP - HTML - CSS - PHP
-                        </li>
-                    </ul>
+                <div class="realisation__presentation">
+                    <div class="realisation__presentation--container">
+                        <div class="realisation__presentation--container-space"><img id="lilipinso1"
+                                src="assets/images/lilipinso1.png" alt="Image 01 Lilipinso"></div>
+                        <div class="realisation__presentation--container-space"><img id="lilipinso2"
+                                src="assets/images/lilipinso2.png" alt="Image 02 Lilipinso"></div>
+                        <div class="realisation__presentation--container-space"><img id="lilipinso3"
+                                src="assets/images/lilipinso3.png" alt="Image 03 Lilipinso"></div>
+                    </div>
                 </div>
-                <div class="educ__master">
-                    <h4>MASTER SOCIOLOGIE <br> UNIVERSITÉ PARIS DIDEROT | 12/2018 </h4>
+
+            </div>
+            <h5>Développement back-end</h5>
+            <div class="realisation__back">
+                <!-- CARTE 4 VIDEO2 -->
+                <div id="carte4video2" class="realisation__cartes">
+                    <video id="video2" class="realisation__cartes--media" controls muted>
+                        <source src="./assets/videos/projet-e-commerce.mp4" alt="O'trink - HTML-CSS-PHP"
+                            type="video/mp4" />
+                    </video>
+                    <div id="carte4contenu" class="realisation__cartes--contenu">
+                        <h2>Projet e-commerce PrestaShop | 06/2022</h2>
+                        <p>O'́TRINK Création d'un thème et personnalisation d
+                            ́un site e-commerce pour un
+                            fabricant de jus HTML - CSS - PHP - PRESTASHOP</p>
+                    </div>
+                </div>
+                <div class="realisation__cartes">
+                    <div class="realisation__cartes--media">
+                        <img id="todolist" src="./assets/images/todolist1.png" alt="Application de gestion de projets">
+                    </div>
+                    <div class="realisation__cartes--contenu">
+                        <h2>Application de gestion de projets | 12/2022</h2>
+                        <p>PHP POO</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <h5>Développement d'interface utilisateur et site e-commerce</h5>
+            <div class="realisation__site">
+                <!-- CARTE 6 VIDEO4 -->
+                <div class="realisation__cartes">
+                    <video class="realisation__cartes--media" controls>
+                        <source src="./assets/videos/vml-digital.mp4" type="video/mp4">
+                    </video>
+                    <div class="realisation__cartes--contenu">
+                        <h2>Webmarketing | 06/2020</h2>
+                        <p>HTML - CSS - Marketing des réseaux sociaux -
+                            Créations de sites vitrines</p>
+                    </div>
+                </div>
 
-        <h3 id="comp">Compétences</h3>
-        <div class="comp">
-            <div class="comp__icones d-flex row align-items-center mx-0">
-                <div id="html" class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-html5 fa-2xl b-3 pt-3"></i>
-                    <p>HTML5</p>
-                </div>
-                <div class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-css3-alt fa-2xl pt-3"></i>
-                    <p>css3</p>
-                </div>
-                <div class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-js fa-2xl pt-3"></i>
-                    <p>javascript</p>
-                </div>
-                <div class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-php fa-2xl pt-3"></i>
-                    <p>php</p>
-                </div>
-                <div class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-bootstrap fa-2xl pt-3"></i>
-                    <p>bootstrap</p>
-                </div>
-                <div class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-figma fa-2xl pt-3"></i>
-                    <p>figma</p>
-                </div>
-                <div class="shadow p-3 border rounded-circle border-warning p-4 align-middle h-auto"
-                    style="width: 9rem;">
-                    <i class="fa-brands fa-wordpress fa-2xl pt-3"></i>
-                    <p>wordpress</p>
+                <div class="realisation__presentation">
+                    <div class="realisation__presentation--container">
+                        <div class="realisation__presentation--container-space"><img id="sunpower1"
+                                src="assets/images/sunpower1.png" alt="Image 01 Sunpower"></div>
+                        <div class="realisation__presentation--container-space"><img id="sunpower2"
+                                src="assets/images/sunpower2.png" alt="Image 02 Sunpower"></div>
+                        <div class="realisation__presentation--container-space"><img id="sunpower3"
+                                src="assets/images/sunpower3.png" alt="Image 03 Sunpower"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- EXP PROFESSIONNELLES -->
-        <h3 id="exp">Expériences professionnelles</h3>
-        <div class="exp__pro">
+            <h5>Webdesign </h5>
+            <div class="realisation__independant">
+                <!-- CARTE 5 VIDEO3 -->
+                <div class="realisation__cartes">
+                    <div class="realisation__cartes--media">
+                        <img id="visitcard" src="./assets/images/cartedevisite.png" alt="Carte de visite">
+                    </div>
+                    <div class="realisation__cartes--contenu">
+                        <h2>Carte de visite | 07/2022</h2>
+                    </div>
+                </div>
+
+                <div class="realisation__cartes">
+                    <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/force+++.png"
+                        alt="Maquette-UX-UI">
+                    <div class="realisation__cartes--contenu">
+                        <h2>Catalogue produit | 12/2022</h2>
+                        <p>FIGMA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESUME -->
+            <h3 id="presentation">Présentation</h3>
+            <div class="presentation d-flex row justify-content-center align-items-center align-self-center card mb-3 shadow-lg p-3 mb-5 bg-body rounded"
+                style="max-width: 540px;">
+                <div class="presentation__container row justify-content-center g-0">
+                    <div class="presentation__image col-md-4">
+                        <img src="./assets/images/4.png" class="img-fluid rounded-start" alt="Photo de Vina">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">A propos</h5>
+                            <p class="card-text">Après un <span><strong>BAC+5 Sociologie</strong></span>, j'ai évolué
+                                principalement dans le domaine du recrutement. Curieuse et créative, j'ai été propulsé
+                                dans
+                                le monde
+                                de la Tech grâce à mes réalisations en e-commerce et en marketing digital.Je prépare
+                                actuellement un
+                                <em>Titre RNCP de
+                                    Niveau 5 "Développeur Web et Web
+                                    Mobile"</em> au sein de DIGINAMIC. Très motivée, je recherche activement une
+                                entreprise en <strong>contrat d'apprentissage</strong> pour m'accueillir.<em> Rythme:
+                                </em>75% du
+                                temps en entreprise et 25% en centre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formation -->
+
+            <h3 id="educ">Formation</h3>
+            <div class="educ">
+                <div class="educ__globale">
+                    <div class="educ__rncp">
+                        <div class="educ__image">
+                            <img id="sablier" src="assets/images/sandclock.png" alt="diplome obtenu">
+                        </div>
+                        <h4>DEVELOPPEUR WEB ET WEB MOBILE <br> TITRE RNCP 5 - BAC+2<br> DIGINAMIC MONTPELLIER | 09/2022
+                        </h4>
+                    </div>
+
+                    <div class="educ__php">
+                        <div class="educ__image">
+                            <img src="assets/images/mortarboard.png" alt="diplome obtenu">
+                        </div>
+                        <h4>DEVELOPPEUR PRESTASHOP E-COMMERCE <br>Attestation de réussite<br> DIGINAMIC MONTPELLIER |
+                            06/2022 </h4>
+                    </div>
+                    <div class="educ__master">
+                        <div class="educ__image">
+                            <img src="assets/images/mortarboard.png" alt="diplome obtenu">
+                        </div>
+                        <h4>MASTER SOCIOLOGIE <br>BAC+5<br> UNIVERSITÉ PARIS DIDEROT | 12/2018 </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN FORMATION -->
+
+            <!-- COMPETENCES -->
+
+            <h3 id="comp">Compétences</h3>
+            <div class="comp">
+                <div class="comp__container">
+                    <!-- CERCLE HTML -->
+                    <div class="comp__container-box">
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-html5 fa-2xl b-3 pt-3"></i>
+                                    </div>
+                                    <p>HTML5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CERCLE CSS3 -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-css3-alt fa-2xl pt-3"></i>
+                                    </div>
+                                    <p>css3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CERCLE JAVASCRIPT -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-js fa-2xl pt-3"></i>
+                                    </div>
+                                    <p>javascript</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CERCLE PHP -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-php fa-2xl pt-3"></i>
+                                    </div>
+                                    <p>php</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comp__container-box">
+                        <!-- CERCLE BOOTSTRAP -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-bootstrap fa-2xl pt-3"></i>
+                                    </div>
+                                    <p>bootstrap</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CERCLE FIGMA -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-figma fa-2xl pt-3"></i>
+                                    </div>
+                                    <p>figma</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CERCLE WORDPRESS -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><i
+                                            class="fa-brands fa-wordpress fa-2xl pt-3"></i>
+                                    </div>
+                                    <p>wordpress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comp__container-box">
+                        <!-- CERCLE REACT -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><ion-icon id="react"
+                                            name="logo-react" size="large"></ion-icon>
+                                    </div>
+                                    <p>react</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CERCLE GITHUB -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><ion-icon id="github"
+                                            name="logo-github" size="large"></ion-icon>
+                                    </div>
+                                    <p>github</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comp__container-box">
+                        <!-- CERCLE SASS -->
+                        <div class="comp__container--circle">
+                            <div class="comp__container--circle-border">
+                                <div class="comp__container--circle-border-content">
+                                    <div class="comp__container--circle-border-content-icone"><ion-icon id="sass"
+                                            name="logo-sass" size="large"></ion-icon>
+                                    </div>
+                                    <p>sass</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- EXP PROFESSIONNELLES -->
+            <h3 id="exp">Expériences professionnelles</h3>
             <div class="exp">
-                <div class="exp__synergie">
-                    <h4>ASSISTANTE D'EXPLOITATION LOGISTIQUE <br> SYNERGIE | 03/2021-01/2022 </h4>
-                    <ul>
-                        <li>Mise en œuvre et suivi de la chaîne de stockage, de la préparation et de la livraison de
-                            marchandises.</li>
-                    </ul>
-                </div>
+                <div class="exp__pro">
+                    <div class="exp__pro--container">
+                        <div class="exp__pro--container-synergie">
+                            <h4>ASSISTANTE D'EXPLOITATION LOGISTIQUE <br> SYNERGIE<br>03/2021-01/2022 </h4>
+                            <ul>
+                                <li>Mise en œuvre et suivi de la chaîne de stockage, de la préparation et de la
+                                    livraison de
+                                    marchandises.</li>
+                            </ul>
+                        </div>
 
-                <div class="exp__nowsite">
-                    <h4>WEBMARKETRICE <br>NOWSITE MARKETING | 06/2020 - 09/2020</h4>
-                    <ul>
-                        <li>Création de sites vitrines et de pages d'atterrissage</li>
-                        <li>Formation de l ́équipe</li>
-                        <li> Prospection commerciale</li>
-                        <li><strong>Réalisation: VML-DIGITAL</strong><br>Solutions marketing digital: HTML, CSS</li>
-                    </ul>
-                </div>
+                        <div class="exp__pro--container-nowsite">
+                            <h4>WEBMARKETRICE <br>NOWSITE MARKETING<br>06/2020 - 09/2020</h4>
+                            <ul>
+                                <li>Création de sites vitrines</li>
+                                <li>Création de pages d'atterrissage</li>
+                                <li><strong>VML-DIGITAL </strong>Solutions marketing digital:<br>HTML, CSS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="exp__randstad">
-                    <h4>CONSULTANTE EN RECRUTEMENT BTP <br> RANDSTAD | 08/2019 - 06/2020</h4>
-                    <ul>
-                        <li>Mise en place de solutions RH en agence visant une clientèle grands comptes dans les
-                            secteurs du
-                            génie climatique et de l'électricité.</li>
-                    </ul>
-                </div>
+                    <div class="exp__pro--container">
+                        <div class="exp__pro--container-randstad">
+                            <h4>CONSULTANTE EN RECRUTEMENT BTP <br> RANDSTAD<br>08/2019 - 06/2020</h4>
+                            <ul>
+                                <li>Mise en place de solutions RH en agence<br>visant une clientèle grands comptes dans les
+                                    secteurs du
+                                    génie climatique et de l'électricité.</li>
+                            </ul>
+                        </div>
 
-                <div class="exp__dropizi">
-                    <h4>GÉRANTE <br>MICRO-ENTREPRISE | 02/2019 - 08/2019</h4>
-                    <ul>
-                        <li>Création et gestion d'un site ecommerce dropshipping. NËBBOO, vente de bijoux: HTML -
-                            DROPIZI
-                        </li>
-                    </ul>
-                </div>
+                        <div class="exp__pro--container-dropizi">
+                            <h4>GÉRANTE <br>MICRO-ENTREPRISE<br> 02/2019 - 08/2019</h4>
+                            <ul>
+                                <li>Création et gestion d'un site ecommerce.<br> NËBBOO, vente de bijoux:<br>HTML
+                                    -
+                                    DROPIZI
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="exp__praxion">
-                    <h4>CHARGÉE DE RECHERCHE EN RECRUTEMENT<br>PRAXION | 07/2018-07/2019</h4>
-                    <ul>
-                        <li>Mise en place de stratégies de sourcing profil cadre en cabinet de recrutement BTP.</li>
-                    </ul>
-                </div>
+                    <div class="exp__pro--container">
+                        <div class="exp__pro--container-praxion">
+                            <h4>CHARGÉE DE RECHERCHE EN RECRUTEMENT<br>PRAXION<br>07/2018-07/2019</h4>
+                            <ul>
+                                <li>Mise en place de stratégies de sourcing profil cadre en cabinet de recrutement BTP.
+                                </li>
+                            </ul>
+                        </div>
 
-                <div class="exp__covea">
-                    <h4>CHARGÉE D'ASSISTANCE AUTOMOBILE<br>FIDELIA ASSISTANCE NANTES & ST-CLOUD | 07/2015-07/2018 </h4>
-                    <ul>
-                        <li>Mise en oeuvre de solutions d'assistance automobile en centre d'appel: France/Etranger.</li>
-                    </ul>
+                        <div class="exp__pro--container-covea">
+                            <h4>CHARGÉE D'ASSISTANCE AUTOMOBILE<br>FIDELIA ASSISTANCE NANTES & ST-CLOUD<br>
+                                07/2015-07/2018
+                            </h4>
+                            <ul>
+                                <li>Mise en oeuvre de solutions d'assistance automobile en centre d'appel:
+                                    France/Etranger.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="carousel">
-            <div class="carousel__container">
-                <div class="carousel__container--element">
-                    <img class="carousel__container--element-img" src="assets/images/randstad-human-forward.png"
-                        alt="Image Randstad">
-                </div>
-                <div class="carousel__container--element">
-                    <img class="carousel__container--element-img" src="assets/images/fid-assistance.png"
-                        alt="Image FIDELIA">
-                </div>
-                <div class="carousel__container--element">
-                    <img class="carousel__container--element-img" src="assets/images/logo-praxion-recrutement.png"
-                        alt="Image PRAXION">
+            <div class="carousel">
+                <div class="carousel__container">
+                    <div class="carousel__container--element">
+                        <img class="carousel__container--element-img" src="assets/images/randstad-human-forward.png"
+                            alt="Image Randstad">
+                    </div>
+                    <div class="carousel__container--element">
+                        <img class="carousel__container--element-img" src="assets/images/fid-assistance.png"
+                            alt="Image FIDELIA">
+                    </div>
+                    <div class="carousel__container--element">
+                        <img class="carousel__container--element-img" src="assets/images/logo-praxion-recrutement.png"
+                            alt="Image PRAXION">
+                    </div>
                 </div>
             </div>
         </div>
