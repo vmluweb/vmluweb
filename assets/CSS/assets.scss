@@ -7,6 +7,7 @@ $fifthColor: rgba(0, 0, 0);
 $sixthColor: rgb(0, 52, 82, 0.7);
 $bodyColor: linear-gradient(to bottom, rgba(134, 135, 155, 0.068), #6a7088, #4d5b76, #2e4764, #003452);
 $goldenColor: linear-gradient(to right, #BF953F, #FCF6BA, #FBF5B7, #AA771C) 1 100%;
+$mainColor: rgba(191, 148, 63, 0.363);
 
 /* FONTS */
 @font-face {
@@ -20,15 +21,24 @@ $goldenColor: linear-gradient(to right, #BF953F, #FCF6BA, #FBF5B7, #AA771C) 1 10
   margin: 0;
 }
 
-body {
-  margin: 0;
-  background: $primaryColor;
-  overflow: auto;
+html body {
+  height: 100%;
 }
 
-html {
+body {
+  margin: 0;
+  padding: 0;
+  color: $primaryColor;
+  text-shadow: 3px 5px 5px $fifthColor;
+  overflow: auto;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+  background-image: url("/assets/images/linus-mimietz-gvptKmonylk-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: filter(opacity(3), contrast(3), blur(1px));
 }
 
 ::root {
@@ -36,9 +46,9 @@ html {
 }
 
 // DEBUT HEADER
-header {
-  overflow-y: visible;
-}
+// header {
+//   overflow-y: visible;
+// }
 
 // BARRE DE NAVIGATION
 
@@ -46,11 +56,18 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: $secondaryColor;
+  background-color: transparent;
   color: $primaryColor;
   width: 100%;
   padding: 10px 30px 10px 30px;
   text-align: center;
+  // border-bottom-width: 2px;
+  // border-top-width: 0px;
+  // border-left-width: 0px;
+  // border-right-width: 0px;
+  // border-style: solid;
+  // border-image: linear-gradient(to right, #BF953F, #FCF6BA, #FBF5B7, #AA771C);
+  // position:absolute;
 
   a {
     text-decoration: none;
@@ -266,16 +283,15 @@ header {
     }
   }
 }
-
 // DEBUT BANNIERE
 
 .banniere {
   width: 100%;
   height: 525px;
-  background-image: url("./assets/images/linus-mimietz-gvptKmonylk-unsplash.jpg");
-  background-repeat: no-repeat;
+  // background-image: url("./assets/images/linus-mimietz-gvptKmonylk-unsplash.jpg");
+  // background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  // background-position: center;
   color: $primaryColor;
   display: flex;
   flex-direction: column;
@@ -285,6 +301,8 @@ header {
   font-size: 30px;
   font-weight: 800;
   text-shadow: 3px 5px 5px $fifthColor;
+  background-image: rgba(128, 128, 128, 0.548);
+  background: blur(9px);
 
   p {
     display: flex;
@@ -335,7 +353,6 @@ main {
   justify-content: center;
 
   .main__content {
-    // background-image: $bodyColor;
     width: 1000px;
     // border-left-width: 2px;
     // border-right-width: 2px;
@@ -344,24 +361,25 @@ main {
     // border-style: solid;
     // border-image: linear-gradient(to right, #BF953F, #FCF6BA, #FBF5B7, #AA771C) 1 100%;
     position: relative;
+    background-color: rgba(191, 148, 63, 0.363);
     display: flex;
     flex-direction: column;
   }
 
 
   h3 {
-    text-align: start;
+    text-align: center;
     margin: 50px 0;
     font-size: 35px;
-    color: $goldenColor;
+    color: $primaryColor;
   }
 
   h5 {
     text-align: center;
-    margin-left: 120px;
+    margin-left: 0px;
     margin-bottom: 40px;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 
@@ -495,7 +513,6 @@ main {
   align-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 
 .realisation__cartes:hover .realisation__cartes--contenu {
@@ -503,17 +520,12 @@ main {
   align-content: center;
   align-items: center;
   padding-top: 8px;
-
 }
 
-// #objectcard {
-//   object-fit: fill;
-// }
 // DEBUT PRESENTATION
-.presentation {
-  background-image: #54607a;
+.bg-body {
+  background-color: #54607a;
 }
-
 // FIN PRESENTATION
 
 /* DEBUT FORMATION */
@@ -526,8 +538,9 @@ main {
   // width: 500px;
   align-items: center;
 
-  h4 {
+  p {
     font-size: 14px;
+    font-weight: 500;
     padding-bottom: 10px;
     text-align: center;
   }
@@ -600,7 +613,7 @@ main {
         height: 150px;
         width: 150px;
         border-radius: 50%;
-        background: $bodyColor;
+        background: $secondaryColor;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -663,6 +676,7 @@ main {
       padding-bottom: 10px;
       font-size: 16px;
       text-align: center;
+      font-weight: 500;
     }
 
     ul {
@@ -680,41 +694,11 @@ main {
       justify-content: space-around;
       align-content: center;
 
-      &-synergie {
-        display: flex;
-        flex-flow: column wrap;
-        padding: 10px;
-        width: 350px;
-      }
-
-      &-nowsite {
-        display: flex;
-        flex-flow: column wrap;
-        padding: 10px;
-        width: 350px;
-      }
-
-      &-randstad {
-        display: flex;
-        flex-flow: column wrap;
-        padding: 10px;
-        width: 350px;
-      }
-
-      &-dropizi {
-        display: flex;
-        flex-flow: column wrap;
-        padding: 10px;
-        width: 350px;
-      }
-
-      &-praxion {
-        display: flex;
-        flex-flow: column wrap;
-        padding: 10px;
-        width: 350px;
-      }
-
+      &-synergie,
+      &-nowsite,
+      &-randstad,
+      &-dropizi,
+      &-praxion,
       &-covea {
         display: flex;
         flex-flow: column wrap;
@@ -775,6 +759,7 @@ footer {
 
   h5 {
     font-size: 20px;
+    color: $thirdColor;
   }
 
   ul {
@@ -862,7 +847,6 @@ footer {
     padding-top: 20px;
   }
 }
-
 /* RESPONSIVE */
 
 @media only screen and (min-width:860px) and (max-width:931px) {
@@ -1077,17 +1061,6 @@ footer {
 
       &__cartes--media {
         width: 100%;
-
-        // embed {
-        //   height: 130px;
-        //   width: 220px
-        // }
-
-        // #objectcard {
-        //   height: 220px;
-        //   width: 220px;
-        //   object-fit: cover;
-        // }
       }
     }
 
@@ -1112,7 +1085,7 @@ footer {
     .exp {
 
       h4 {
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
       }
 
@@ -1142,8 +1115,6 @@ footer {
       }
     }
   }
-
-
 
   footer {
     width: 100%;
