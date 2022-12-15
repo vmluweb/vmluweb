@@ -10,19 +10,17 @@
     <meta name="author" content="Vina MARIE-LUCE">
 
     <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/CSS/assets.css">
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script> -->
     <script src="./assets/js/burger-menu.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-
+    <!-- <img id="bgd" src="./assets/images/linus-mimietz-gvptKmonylk-unsplash.jpg" alt=""> -->
     <header>
         <!-- DEBUT BARRE DE NAVIGATION -->
         <nav class="navbar">
@@ -79,7 +77,8 @@
             <p class="banniere__texte1">Je suis Vina MARIE-LUCE,</p>
             <p class="banniere__texte2">Développeuse Web.</p>
             <a download href="./assets/pdf/CV_Vina_MARIE-LUCE_Oct_2022.pdf">Télécharger CV</a>
-            <!-- FIN BANNIERE -->
+        </div>
+        <!-- FIN BANNIERE -->
     </header>
 
 
@@ -87,151 +86,150 @@
     <main>
         <div class="main__content">
             <!-- REALISATIONS -->
+            <section class="portfolio">
+                <h3 id="projet">Portfolio</h3>
+                <h4>Maquettage et Design UX/UI</h4>
+                <div class="realisation__maquette">
+                    <!-- CARTE 3 IMAGE1 -->
+                    <div class="realisation__cartes">
+                        <img id="maquette__uxui" class="realisation__cartes--media"
+                            src="./assets/images/maquettage-uxui.png" alt="Maquette-UX-UI">
+                        <div class="realisation__cartes--contenu">
+                            <h2>Maquette UX/UI | 09/2022</h2>
+                            <p>Balsamiq</p>
+                        </div>
+                    </div>
+                    <div class="realisation__cartes">
+                        <img id="maquette__ux" class="realisation__cartes--media" src="assets/images/Maquette-UX-UI.jpg"
+                            alt="Maquette-UX-UI">
+                        <div class="realisation__cartes--contenu">
+                            <h2>Maquette UX/UI | 09/2022</h2>
+                            <p>FIGMA</p>
+                        </div>
+                    </div>
+                </div>
+                <h4>Intégration Web</h4>
+                <div class="realisation__integration">
+                    <!-- CARTE 2 VIDEO1 -->
+                    <div id="carte2video1" class="realisation__cartes">
+                        <video id="video1" class="realisation__cartes--media" controls>
+                            <source src="./assets/videos/systematic.mp4" alt="intégration web" type="video/mp4" />
+                        </video>
+                        <div id="carte2contenu" class="realisation__cartes--contenu">
+                            <h2>intégration Web | 09/2022</h2>
+                            <p>HTML & CSS</p>
+                        </div>
+                    </div>
 
-            <h3 id="projet">Portfolio</h3>
-            <h5>Maquettage et Design UX/UI</h5>
-            <div class="realisation__maquette">
-                <!-- CARTE 3 IMAGE1 -->
-                <div class="realisation__cartes">
-                    <img id="maquette__uxui" class="realisation__cartes--media"
-                        src="./assets/images/maquettage-uxui.png" alt="Maquette-UX-UI">
-                    <div class="realisation__cartes--contenu">
-                        <h2>Maquette UX/UI | 09/2022</h2>
-                        <p>Balsamiq</p>
+                    <div class="realisation__presentation">
+                        <div class="realisation__presentation--container">
+                            <div class="realisation__presentation--container-space"><img id="lilipinso1"
+                                    src="assets/images/lilipinso1.png" alt="Image 01 Lilipinso"></div>
+                            <div class="realisation__presentation--container-space"><img id="lilipinso2"
+                                    src="assets/images/lilipinso2.png" alt="Image 02 Lilipinso"></div>
+                            <div class="realisation__presentation--container-space"><img id="lilipinso3"
+                                    src="assets/images/lilipinso3.png" alt="Image 03 Lilipinso"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="realisation__cartes">
-                    <img id="maquette__uxui" class="realisation__cartes--media" src="assets/images/Maquette-UX-UI.jpg"
-                        alt="Maquette-UX-UI">
-                    <div class="realisation__cartes--contenu">
-                        <h2>Maquette UX/UI | 09/2022</h2>
-                        <p>FIGMA</p>
-                    </div>
-                </div>
-            </div>
-            <h5>Intégration Web</h5>
-            <div class="realisation__integration">
-                <!-- CARTE 2 VIDEO1 -->
-                <div id="carte2video1" class="realisation__cartes">
-                    <video id="video1" class="realisation__cartes--media" controls>
-                        <source src="./assets/videos/systematic.mp4" alt="intégration web" type="video/mp4" />
-                    </video>
-                    <div id="carte2contenu" class="realisation__cartes--contenu">
-                        <h2>intégration Web | 09/2022</h2>
-                        <p>HTML & CSS</p>
-                    </div>
-                </div>
 
-                <div class="realisation__presentation">
-                    <div class="realisation__presentation--container">
-                        <div class="realisation__presentation--container-space"><img id="lilipinso1"
-                                src="assets/images/lilipinso1.png" alt="Image 01 Lilipinso"></div>
-                        <div class="realisation__presentation--container-space"><img id="lilipinso2"
-                                src="assets/images/lilipinso2.png" alt="Image 02 Lilipinso"></div>
-                        <div class="realisation__presentation--container-space"><img id="lilipinso3"
-                                src="assets/images/lilipinso3.png" alt="Image 03 Lilipinso"></div>
-                    </div>
                 </div>
-
-            </div>
-            <h5>Développement back-end</h5>
-            <div class="realisation__back">
-                <!-- CARTE 4 VIDEO2 -->
-                <div id="carte4video2" class="realisation__cartes">
-                    <video id="video2" class="realisation__cartes--media" controls muted>
-                        <source src="./assets/videos/projet-e-commerce.mp4" alt="O'trink - HTML-CSS-PHP"
-                            type="video/mp4" />
-                    </video>
-                    <div id="carte4contenu" class="realisation__cartes--contenu">
-                        <h2>Projet e-commerce PrestaShop | 06/2022</h2>
-                        <p>O'́TRINK Création d'un thème et personnalisation d
-                            ́un site e-commerce pour un
-                            fabricant de jus HTML - CSS - PHP - PRESTASHOP</p>
+                <h4>Développement back-end</h4>
+                <div class="realisation__back">
+                    <!-- CARTE 4 VIDEO2 -->
+                    <div id="carte4video2" class="realisation__cartes">
+                        <video id="video2" class="realisation__cartes--media" controls muted>
+                            <source src="./assets/videos/projet-e-commerce.mp4" alt="O'trink - HTML-CSS-PHP"
+                                type="video/mp4" />
+                        </video>
+                        <div id="carte4contenu" class="realisation__cartes--contenu">
+                            <h2>Projet e-commerce PrestaShop | 06/2022</h2>
+                            <p>O'́TRINK Création d'un thème et personnalisation d
+                                ́un site e-commerce pour un
+                                fabricant de jus HTML - CSS - PHP - PRESTASHOP</p>
+                        </div>
                     </div>
-                </div>
-                <div class="realisation__cartes">
-                    <div class="realisation__cartes--media">
-                        <img id="todolist" src="./assets/images/todolist1.png" alt="Application de gestion de projets">
-                    </div>
-                    <div class="realisation__cartes--contenu">
-                        <h2>Application de gestion de projets | 12/2022</h2>
-                        <p>PHP POO</p>
-                    </div>
-                </div>
-            </div>
-
-            <h5>Développement d'interface utilisateur et site e-commerce</h5>
-            <div class="realisation__site">
-                <!-- CARTE 6 VIDEO4 -->
-                <div class="realisation__cartes">
-                    <video class="realisation__cartes--media" controls>
-                        <source src="./assets/videos/vml-digital.mp4" type="video/mp4">
-                    </video>
-                    <div class="realisation__cartes--contenu">
-                        <h2>Webmarketing | 06/2020</h2>
-                        <p>HTML - CSS - Marketing des réseaux sociaux -
-                            Créations de sites vitrines</p>
+                    <div class="realisation__cartes">
+                        <div class="realisation__cartes--media">
+                            <img id="todolist" src="./assets/images/todolist1.png"
+                                alt="Application de gestion de projets">
+                        </div>
+                        <div class="realisation__cartes--contenu">
+                            <h2>Application de gestion de projets | 12/2022</h2>
+                            <p>PHP POO</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="realisation__presentation">
-                    <div class="realisation__presentation--container">
-                        <div class="realisation__presentation--container-space"><img id="sunpower1"
-                                src="assets/images/sunpower1.png" alt="Image 01 Sunpower"></div>
-                        <div class="realisation__presentation--container-space"><img id="sunpower2"
-                                src="assets/images/sunpower2.png" alt="Image 02 Sunpower"></div>
-                        <div class="realisation__presentation--container-space"><img id="sunpower3"
-                                src="assets/images/sunpower3.png" alt="Image 03 Sunpower"></div>
+                <h4>Développement d'interface utilisateur et site e-commerce</h4>
+                <div class="realisation__site">
+                    <!-- CARTE 6 VIDEO4 -->
+                    <div class="realisation__cartes">
+                        <video class="realisation__cartes--media" controls>
+                            <source src="./assets/videos/vml-digital.mp4" type="video/mp4">
+                        </video>
+                        <div class="realisation__cartes--contenu">
+                            <h2>Webmarketing | 06/2020</h2>
+                            <p>HTML - CSS - Marketing des réseaux sociaux -
+                                Créations de sites vitrines</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <h5>Webdesign </h5>
-            <div class="realisation__independant">
-                <!-- CARTE 5 VIDEO3 -->
-                <div class="realisation__cartes">
-                    <div class="realisation__cartes--media">
-                        <img id="visitcard" src="./assets/images/cartedevisite.png" alt="Carte de visite">
-                    </div>
-                    <div class="realisation__cartes--contenu">
-                        <h2>Carte de visite | 07/2022</h2>
-                    </div>
-                </div>
 
-                <div class="realisation__cartes">
-                    <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/force+++.png"
-                        alt="Maquette-UX-UI">
-                    <div class="realisation__cartes--contenu">
-                        <h2>Catalogue produit | 12/2022</h2>
-                        <p>FIGMA</p>
+                    <div class="realisation__presentation">
+                        <div class="realisation__presentation--container">
+                            <div class="realisation__presentation--container-space"><img id="sunpower1"
+                                    src="assets/images/sunpower1.png" alt="Image 01 Sunpower"></div>
+                            <div class="realisation__presentation--container-space"><img id="sunpower2"
+                                    src="assets/images/sunpower2.png" alt="Image 02 Sunpower"></div>
+                            <div class="realisation__presentation--container-space"><img id="sunpower3"
+                                    src="assets/images/sunpower3.png" alt="Image 03 Sunpower"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <h4>Webdesign </h4>
+                <div class="realisation__independant">
+                    <!-- CARTE 5 VIDEO3 -->
+                    <div class="realisation__cartes">
+                        <div class="realisation__cartes--media">
+                            <img id="visitcard" src="./assets/images/cartedevisite.png" alt="Carte de visite">
+                        </div>
+                        <div class="realisation__cartes--contenu">
+                            <h2>Carte de visite | 07/2022</h2>
+                        </div>
+                    </div>
 
+                    <div class="realisation__cartes">
+                        <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/force+++.png"
+                            alt="Maquette-UX-UI">
+                        <div class="realisation__cartes--contenu">
+                            <h2>Catalogue produit | 12/2022</h2>
+                            <p>FIGMA</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- RESUME -->
             <h3 id="presentation">Présentation</h3>
-            <div class="presentation d-flex row justify-content-center align-items-center align-self-center card mb-3 shadow-lg p-3 mb-5 bg-body rounded"
-                style="max-width: 540px;">
-                <div class="presentation__container row justify-content-center g-0">
-                    <div class="presentation__image col-md-4">
-                        <img src="./assets/images/4.png" class="img-fluid rounded-start" alt="Photo de Vina">
+            <div class="presentation">
+                <div class="presentation__container">
+                    <div class="presentation__container--image">
+                        <img src="./assets/images/4.png" alt="Photo de Vina">
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">A propos</h5>
-                            <p class="card-text">Après un <span><strong>BAC+5 Sociologie</strong></span>, j'ai évolué
-                                principalement dans le domaine du recrutement. Curieuse et créative, j'ai été propulsé
-                                dans
-                                le monde
-                                de la Tech grâce à mes réalisations en e-commerce et en marketing digital.Je prépare
-                                actuellement un
-                                <em>Titre RNCP de
-                                    Niveau 5 "Développeur Web et Web
-                                    Mobile"</em> au sein de DIGINAMIC. Très motivée, je recherche activement une
-                                entreprise en <strong>contrat d'apprentissage</strong> pour m'accueillir.<em> Rythme:
-                                </em>75% du
-                                temps en entreprise et 25% en centre.
-                            </p>
-                        </div>
+                    <div class="presentation__container--carte">
+                        <h4>A propos</h4>
+                        <p class="presentation__container--carte-para">Après un <span><strong>BAC+5
+                                    Sociologie</strong></span>, j'ai évolué
+                            principalement dans le domaine du recrutement. Curieuse et créative, j'ai été propulsé
+                            dans
+                            le monde
+                            de la Tech grâce à mes réalisations en e-commerce et en marketing digital.Je prépare
+                            actuellement un
+                            <em>Titre RNCP de
+                                Niveau 5 "Développeur Web et Web
+                                Mobile"</em> au sein de DIGINAMIC. Très motivée, je recherche activement une
+                            entreprise en <strong>contrat d'apprentissage</strong> pour m'accueillir.<em> Rythme:
+                            </em>75% du
+                            temps en entreprise et 25% en centre.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -245,7 +243,8 @@
                         <div class="educ__image">
                             <img id="sablier" src="assets/images/sandclock.png" alt="diplome obtenu">
                         </div>
-                        <p><strong>DEVELOPPEUR WEB ET WEB MOBILE</strong> <br> TITRE RNCP 5 - BAC+2<br> DIGINAMIC MONTPELLIER | 09/2022
+                        <p><strong>DEVELOPPEUR WEB ET WEB MOBILE</strong> <br> TITRE RNCP 5 - BAC+2<br> DIGINAMIC
+                            MONTPELLIER | 09/2022
                         </p>
                     </div>
 
@@ -253,7 +252,8 @@
                         <div class="educ__image">
                             <img src="assets/images/mortarboard.png" alt="diplome obtenu">
                         </div>
-                        <p><strong>DEVELOPPEUR PRESTASHOP E-COMMERCE</strong> <br>Attestation de réussite<br> DIGINAMIC MONTPELLIER |
+                        <p><strong>DEVELOPPEUR PRESTASHOP E-COMMERCE</strong> <br>Attestation de réussite<br> DIGINAMIC
+                            MONTPELLIER |
                             06/2022 </p>
                     </div>
                     <div class="educ__master">
@@ -361,10 +361,10 @@
                         <div class="comp__container--circle">
                             <div class="comp__container--circle-border">
                                 <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><ion-icon id="react"
-                                            name="logo-react" size="large"></ion-icon>
+                                    <div class="comp__container--circle-border-content-icone">
+                                        <ion-icon id="react" name="logo-react" size="large"></ion-icon>
                                     </div>
-                                    <p>react</p>
+                                    <p id="react-content">react</p>
                                 </div>
                             </div>
                         </div>
@@ -376,7 +376,7 @@
                                     <div class="comp__container--circle-border-content-icone"><ion-icon id="github"
                                             name="logo-github" size="large"></ion-icon>
                                     </div>
-                                    <p>github</p>
+                                    <p id="git-content">github</p>
                                 </div>
                             </div>
                         </div>
@@ -387,10 +387,10 @@
                         <div class="comp__container--circle">
                             <div class="comp__container--circle-border">
                                 <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><ion-icon id="sass"
-                                            name="logo-sass" size="large"></ion-icon>
+                                    <div class="comp__container--circle-border-content-icone">
+                                        <ion-icon id="sass" name="logo-sass" size="large"></ion-icon>
                                     </div>
-                                    <p>sass</p>
+                                    <p id="sass-content">sass</p>
                                 </div>
                             </div>
                         </div>
@@ -427,7 +427,8 @@
                         <div class="exp__pro--container-randstad">
                             <h4>CONSULTANTE EN RECRUTEMENT BTP <br> RANDSTAD<br>08/2019 - 06/2020</h4>
                             <ul>
-                                <li>Mise en place de solutions RH en agence<br>visant une clientèle grands comptes dans les
+                                <li>Mise en place de solutions RH en agence<br>visant une clientèle grands comptes dans
+                                    les
                                     secteurs du
                                     génie climatique et de l'électricité.</li>
                             </ul>
@@ -491,7 +492,7 @@
         <nav class="footer__nav">
 
             <div class="footer__nav--menu">
-                <h5>Menu de navigation</h5>
+                <h5 id="titre1footer">Menu de navigation</h5>
                 <a href="#projet">Portfolio</a>
                 <a href="#presentation">Présentation</a>
                 <a href="#educ">Formation</a>
