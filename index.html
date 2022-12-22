@@ -13,24 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/CSS/assets.css">
     <!-- JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script> -->
     <script src="./assets/js/burger-menu.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-    <!-- <img id="bgd" src="./assets/images/linus-mimietz-gvptKmonylk-unsplash.jpg" alt=""> -->
     <header>
         <!-- DEBUT BARRE DE NAVIGATION -->
-        <nav class="navbar">
+        <nav class="navbar" role="navigation">
 
             <!-- DEBUT LOGO -->
-            <div class="navbar__logo">
-
-                <h1><a href="#entete">Vina MARIE-LUCE</a></h1>
-
-            </div>
+            <h1 class="navbar__logo"><a href="#entete">Vina MARIE-LUCE</a></h1>
             <!-- FIN LOGO -->
 
             <!-- DEBUT NAV BURGER MENU -->
@@ -72,11 +66,9 @@
 
         <!-- DEBUT BANNIERE -->
         <div class="banniere">
-            Bonjour !
-            <!-- <div class="banniere__texte--s">Bonjour !</div> -->
-            <p class="banniere__texte1">Je suis Vina MARIE-LUCE,</p>
-            <p class="banniere__texte2">Développeuse Web.</p>
-            <a download href="./assets/pdf/CV_Vina_MARIE-LUCE_Oct_2022.pdf">Télécharger CV</a>
+            <p class="banniere__texte1">Développeuse Web: <br>disponible</p>
+            en contrat de professionnalisation
+            <a download href="./assets/pdf/CV_Vina_MARIE-LUCE_Oct_2022.pdf">Téléchargez CV</a>
         </div>
         <!-- FIN BANNIERE -->
     </header>
@@ -87,15 +79,15 @@
         <div class="main__content">
             <!-- REALISATIONS -->
             <section class="portfolio">
-                <h3 id="projet">Portfolio</h3>
-                <h4>Maquettage et Design UX/UI</h4>
+                <h2 id="projet">Portfolio</h2>
+                <h3><strong>Conception Web</strong></h3>
                 <div class="realisation__maquette">
                     <!-- CARTE 3 IMAGE1 -->
                     <div class="realisation__cartes">
                         <img id="maquette__uxui" class="realisation__cartes--media"
                             src="./assets/images/maquettage-uxui.png" alt="Maquette-UX-UI">
                         <div class="realisation__cartes--contenu">
-                            <h2>Maquette UX/UI | 09/2022</h2>
+                            <h3>Maquette UX/UI | 09/2022</h3>
                             <p>Balsamiq</p>
                         </div>
                     </div>
@@ -103,12 +95,12 @@
                         <img id="maquette__ux" class="realisation__cartes--media" src="assets/images/Maquette-UX-UI.jpg"
                             alt="Maquette-UX-UI">
                         <div class="realisation__cartes--contenu">
-                            <h2>Maquette UX/UI | 09/2022</h2>
+                            <h3>Maquette UX/UI | 09/2022</h3>
                             <p>FIGMA</p>
                         </div>
                     </div>
                 </div>
-                <h4>Intégration Web</h4>
+                <h3><strong>Intégration Web</strong></h3>
                 <div class="realisation__integration">
                     <!-- CARTE 2 VIDEO1 -->
                     <div id="carte2video1" class="realisation__cartes">
@@ -116,7 +108,7 @@
                             <source src="./assets/videos/systematic.mp4" alt="intégration web" type="video/mp4" />
                         </video>
                         <div id="carte2contenu" class="realisation__cartes--contenu">
-                            <h2>intégration Web | 09/2022</h2>
+                            <h3>intégration Web | 09/2022</h3>
                             <p>HTML & CSS</p>
                         </div>
                     </div>
@@ -133,7 +125,7 @@
                     </div>
 
                 </div>
-                <h4>Développement back-end</h4>
+                <h3><strong>Développement Back-End</strong></h3>
                 <div class="realisation__back">
                     <!-- CARTE 4 VIDEO2 -->
                     <div id="carte4video2" class="realisation__cartes">
@@ -142,8 +134,8 @@
                                 type="video/mp4" />
                         </video>
                         <div id="carte4contenu" class="realisation__cartes--contenu">
-                            <h2>Projet e-commerce PrestaShop | 06/2022</h2>
-                            <p>O'́TRINK Création d'un thème et personnalisation d
+                            <h3>Projet e-commerce PrestaShop | 06/2022</h3>
+                            <p>O'TRINK Création d'un thème et personnalisation d
                                 ́un site e-commerce pour un
                                 fabricant de jus HTML - CSS - PHP - PRESTASHOP</p>
                         </div>
@@ -154,13 +146,13 @@
                                 alt="Application de gestion de projets">
                         </div>
                         <div class="realisation__cartes--contenu">
-                            <h2>Application de gestion de projets | 12/2022</h2>
+                            <h3>Application de gestion de projets | 12/2022</h3>
                             <p>PHP POO</p>
                         </div>
                     </div>
                 </div>
 
-                <h4>Développement d'interface utilisateur et site e-commerce</h4>
+                <h3><strong>Développement Front-End</strong></h3>
                 <div class="realisation__site">
                     <!-- CARTE 6 VIDEO4 -->
                     <div class="realisation__cartes">
@@ -168,7 +160,7 @@
                             <source src="./assets/videos/vml-digital.mp4" type="video/mp4">
                         </video>
                         <div class="realisation__cartes--contenu">
-                            <h2>Webmarketing | 06/2020</h2>
+                            <h3>Webmarketing | 06/2020</h3>
                             <p>HTML - CSS - Marketing des réseaux sociaux -
                                 Créations de sites vitrines</p>
                         </div>
@@ -185,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <h4>Webdesign </h4>
+                <h3><strong>Graphisme</strong></h3>
                 <div class="realisation__independant">
                     <!-- CARTE 5 VIDEO3 -->
                     <div class="realisation__cartes">
@@ -193,7 +185,7 @@
                             <img id="visitcard" src="./assets/images/cartedevisite.png" alt="Carte de visite">
                         </div>
                         <div class="realisation__cartes--contenu">
-                            <h2>Carte de visite | 07/2022</h2>
+                            <h3>Carte de visite | 07/2022</h3>
                         </div>
                     </div>
 
@@ -201,34 +193,33 @@
                         <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/force+++.png"
                             alt="Maquette-UX-UI">
                         <div class="realisation__cartes--contenu">
-                            <h2>Catalogue produit | 12/2022</h2>
+                            <h3>Catalogue produit | 12/2022</h3>
                             <p>FIGMA</p>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- RESUME -->
-            <h3 id="presentation">Présentation</h3>
+            <h2 id="presentation">Présentation</h2>
             <div class="presentation">
                 <div class="presentation__container">
                     <div class="presentation__container--image">
                         <img src="./assets/images/4.png" alt="Photo de Vina">
                     </div>
                     <div class="presentation__container--carte">
-                        <h4>A propos</h4>
-                        <p class="presentation__container--carte-para">Après un <span><strong>BAC+5
-                                    Sociologie</strong></span>, j'ai évolué
-                            principalement dans le domaine du recrutement. Curieuse et créative, j'ai été propulsé
-                            dans
-                            le monde
-                            de la Tech grâce à mes réalisations en e-commerce et en marketing digital.Je prépare
-                            actuellement un
-                            <em>Titre RNCP de
-                                Niveau 5 "Développeur Web et Web
-                                Mobile"</em> au sein de DIGINAMIC. Très motivée, je recherche activement une
-                            entreprise en <strong>contrat d'apprentissage</strong> pour m'accueillir.<em> Rythme:
-                            </em>75% du
-                            temps en entreprise et 25% en centre.
+                        <p class="presentation__container--carte-para">
+                            <strong>Après avoir créé un site e-commerce en dropshipping dans l'univers des bijoux et
+                                développé
+                                une activité en Webmarketing, je me forme actuellement au Développement Web et Web
+                                Mobile. <br><br>Passionnée par les nouvelles technologies, je suis de près les avancées
+                                en
+                                matière
+                                d'innovation.
+                                Je m'intéresse activement à la programmation, au marketing digital, aux humanités
+                                numériques
+                                et à la relation client.<br>Très motivée, je recherche une entreprise en contrat de
+                                professionnalisation.<br><br>
+                                Rythme: 75% du temps en entreprise et 25% en centre</strong>
                         </p>
                     </div>
                 </div>
@@ -236,31 +227,35 @@
 
             <!-- Formation -->
 
-            <h3 id="educ">Formation</h3>
+            <h2 id="educ">Formation</h2>
             <div class="educ">
                 <div class="educ__globale">
-                    <div class="educ__rncp">
-                        <div class="educ__image">
+                    <div class="educ__globale--container">
+                        <div class="educ__globale--container-image">
                             <img id="sablier" src="assets/images/sandclock.png" alt="diplome obtenu">
                         </div>
-                        <p><strong>DEVELOPPEUR WEB ET WEB MOBILE</strong> <br> TITRE RNCP 5 - BAC+2<br> DIGINAMIC
-                            MONTPELLIER | 09/2022
-                        </p>
+                        <h3><strong>DEVELOPPEUR WEB ET WEB MOBILE</strong></h3>
+                        <p><em>TITRE RNCP 5 - BAC+2</em></p>
+                        <p>DIGINAMIC
+                            MONTPELLIER | 09/2022</p>
                     </div>
 
-                    <div class="educ__php">
-                        <div class="educ__image">
+                    <div class="educ__globale--container">
+                        <div class="educ__globale--container-image">
                             <img src="assets/images/mortarboard.png" alt="diplome obtenu">
                         </div>
-                        <p><strong>DEVELOPPEUR PRESTASHOP E-COMMERCE</strong> <br>Attestation de réussite<br> DIGINAMIC
-                            MONTPELLIER |
-                            06/2022 </p>
+                        <h3><strong>DEVELOPPEUR PRESTASHOP E-COMMERCE</strong></h3>
+                        <p><em>Attestation de réussite</em></p>
+                        <p>DIGINAMIC MONTPELLIER | 06/2022</p>
                     </div>
-                    <div class="educ__master">
-                        <div class="educ__image">
+
+                    <div class="educ__globale--container">
+                        <div class="educ__globale--container-image">
                             <img src="assets/images/mortarboard.png" alt="diplome obtenu">
                         </div>
-                        <p><strong>MASTER SOCIOLOGIE</strong><br>BAC+5<br> UNIVERSITÉ PARIS DIDEROT | 12/2018 </p>
+                        <h3><strong>MASTER SOCIOLOGIE</strong></h3>
+                        <p><em>BAC+5</em></p>
+                        <p>UNIVERSITÉ PARIS DIDEROT | 12/2018</p>
                     </div>
                 </div>
             </div>
@@ -268,7 +263,7 @@
 
             <!-- COMPETENCES -->
 
-            <h3 id="comp">Compétences</h3>
+            <h2 id="comp">Compétences</h2>
             <div class="comp">
                 <div class="comp__container">
                     <!-- CERCLE HTML -->
@@ -399,70 +394,62 @@
                 </div>
             </div>
             <!-- EXP PROFESSIONNELLES -->
-            <h3 id="exp">Expériences professionnelles</h3>
+            <h2 id="exp">Expériences professionnelles</h2>
             <div class="exp">
                 <div class="exp__pro">
                     <div class="exp__pro--container">
-                        <div class="exp__pro--container-synergie">
-                            <h4>ASSISTANTE D'EXPLOITATION LOGISTIQUE <br> SYNERGIE<br>03/2021-01/2022 </h4>
-                            <ul>
-                                <li>Mise en œuvre et suivi de la chaîne de stockage, de la préparation et de la
-                                    livraison de
-                                    marchandises.</li>
-                            </ul>
+                        <div class="exp__pro--container-inner">
+                            <h3>ASSISTANTE D'EXPLOITATION LOGISTIQUE</h3>
+                            <p>SYNERGIE</p>
+                            <p>03/2021-01/2022</p>
+                            <p>Mise en œuvre et suivi de la chaîne de stockage, de la préparation et de la
+                                livraison de
+                                marchandises.</p>
                         </div>
 
-                        <div class="exp__pro--container-nowsite">
-                            <h4>WEBMARKETRICE <br>NOWSITE MARKETING<br>06/2020 - 09/2020</h4>
-                            <ul>
-                                <li>Création de sites vitrines</li>
-                                <li>Création de pages d'atterrissage</li>
-                                <li><strong>VML-DIGITAL </strong>Solutions marketing digital:<br>HTML, CSS
-                                </li>
-                            </ul>
+                        <div id="nowsite" class="exp__pro--container-inner">
+                            <h3>WEBMARKETRICE</h3>
+                            <p>NOWSITE MARKETING</p>
+                            <p> 06/2020 - 09/2020</p>
+                            <p>Création de sites vitrines</p>
+                            <p>Création de pages d'atterrissage</p>
                         </div>
                     </div>
 
                     <div class="exp__pro--container">
-                        <div class="exp__pro--container-randstad">
-                            <h4>CONSULTANTE EN RECRUTEMENT BTP <br> RANDSTAD<br>08/2019 - 06/2020</h4>
-                            <ul>
-                                <li>Mise en place de solutions RH en agence<br>visant une clientèle grands comptes dans
-                                    les
-                                    secteurs du
-                                    génie climatique et de l'électricité.</li>
-                            </ul>
+                        <div class="exp__pro--container-inner">
+                            <h3>CONSULTANTE EN RECRUTEMENT BTP</h3>
+                            <p> RANDSTAD</p>
+                            <p>08/2019 - 06/2020</p>
+                            <p>Mise en place de solutions RH en agence visant une clientèle grands comptes dans les
+                                secteurs du génie climatique et de l'électricité.
+                            </p>
                         </div>
 
-                        <div class="exp__pro--container-dropizi">
-                            <h4>GÉRANTE <br>MICRO-ENTREPRISE<br> 02/2019 - 08/2019</h4>
-                            <ul>
-                                <li>Création et gestion d'un site ecommerce.<br> NËBBOO, vente de bijoux:<br>HTML
-                                    -
-                                    DROPIZI
-                                </li>
-                            </ul>
+                        <div id="dropizi" class="exp__pro--container-inner">
+                            <h3>GÉRANTE</h3>
+                            <p>MICRO-ENTREPRISE</p>
+                            <p>02/2019 - 08/2019</p>
+                            <p>Création et gestion d'un site ecommerce.</p>
+                            <p>NËBBOO, vente de bijoux.</p>
                         </div>
                     </div>
 
                     <div class="exp__pro--container">
-                        <div class="exp__pro--container-praxion">
-                            <h4>CHARGÉE DE RECHERCHE EN RECRUTEMENT<br>PRAXION<br>07/2018-07/2019</h4>
-                            <ul>
-                                <li>Mise en place de stratégies de sourcing profil cadre en cabinet de recrutement BTP.
-                                </li>
-                            </ul>
+                        <div class="exp__pro--container-inner">
+                            <h3>CHARGÉE DE RECHERCHE EN RECRUTEMENT</h3>
+                            <p>PRAXION</p>
+                            <p>07/2018-07/2019</p>
+                            <p>Mise en place de stratégies de sourcing profil cadre en cabinet de recrutement BTP.</p>
                         </div>
 
-                        <div class="exp__pro--container-covea">
-                            <h4>CHARGÉE D'ASSISTANCE AUTOMOBILE<br>FIDELIA ASSISTANCE NANTES & ST-CLOUD<br>
-                                07/2015-07/2018
-                            </h4>
-                            <ul>
-                                <li>Mise en oeuvre de solutions d'assistance automobile en centre d'appel:
-                                    France/Etranger.
-                                </li>
-                            </ul>
+                        <div id="covea" class="exp__pro--container-inner">
+                            <h3>CHARGÉE D'ASSISTANCE AUTOMOBILE</h3>
+                            <p>FIDELIA ASSISTANCE NANTES & ST-CLOUD</p>
+                            <p>07/2015-07/2018
+                            </p>
+                            <p>Mise en oeuvre de solutions d'assistance automobile en centre d'appel: France/Etranger.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -492,17 +479,16 @@
         <nav class="footer__nav">
 
             <div class="footer__nav--menu">
-                <h5 id="titre1footer">Menu de navigation</h5>
+                <h4 id="titre1footer">Menu de navigation</h4>
                 <a href="#projet">Portfolio</a>
                 <a href="#presentation">Présentation</a>
                 <a href="#educ">Formation</a>
                 <a href="#comp">Compétences</a>
-
                 <a href="#exp">Expériences professionnelles</a>
             </div>
 
             <div class="footer__nav--contact">
-                <h5>Contact</h5>
+                <h4>Contact</h4>
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i>Localisation: Nîmes</li>
                     <li><i class="fa-solid fa-phone"></i>Téléphone: 06 98 71 24 33</li>
@@ -513,7 +499,7 @@
             </div>
 
             <div class="footer__nav--reseauxs">
-                <h5>Suivez-moi</h5>
+                <h4>Suivez-moi</h4>
                 <div class="footer__nav--reseauxs-icones">
                     <a href="https://www.linkedin.com/in/v-m-29995113b"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
                     <a href="https://github.com/vmluweb"><i class="fa-brands fa-github fa-2xl"></i></a>

@@ -18,14 +18,13 @@ html body {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
 header {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -95,13 +94,18 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 996px) {
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     overflow: hidden;
+    margin-top: 0;
+  }
+  .navbar__logo h1 {
+    margin-left: 50px;
   }
   .navbar__menu {
     display: none;
@@ -130,6 +134,7 @@ header {
     height: 27px;
     width: 27px;
     margin: 0 50px 50px 50px;
+    top: 25px;
     position: relative;
     z-index: 2;
   }
@@ -221,6 +226,7 @@ header {
     align-items: center;
     text-align: center;
     background-color: rgb(0, 52, 82);
+    transition: all 0.4s ease;
   }
   #menu a {
     color: rgb(255, 165, 0);
@@ -242,7 +248,7 @@ header {
   font-weight: 800;
   text-shadow: 3px 5px 5px rgb(0, 0, 0);
   margin-top: 50px;
-  margin-bottom: 30;
+  margin-bottom: 30px;
   padding: 70px 0;
   overflow: hidden;
 }
@@ -260,20 +266,21 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(255, 165, 0);
+  background: transparent;
   text-transform: capitalize;
   font-size: 20px;
   text-decoration: none;
   border-color: rgb(255, 255, 255);
   border-radius: 10px;
-  color: rgb(0, 52, 82);
+  color: rgb(255, 255, 255);
   transition: 0.3s;
   cursor: pointer;
   margin-top: 30px;
   text-shadow: none;
+  box-shadow: 1px 1px 2px 1px rgba(165, 196, 209, 0.7019607843);
 }
 .banniere a:hover {
-  background-color: rgb(0, 52, 82);
+  background-color: rgba(191, 148, 63, 0.363);
   color: rgb(255, 255, 255);
   padding: 10px 15px;
   text-transform: uppercase;
@@ -294,25 +301,27 @@ main .portfolio {
   justify-content: center;
 }
 main .main__content {
-  max-width: 1000px;
+  width: 1200px;
   position: relative;
-  background-color: rgba(191, 148, 63, 0.363);
+  background-color: rgba(191, 148, 63, 0.22);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-main h3 {
+main h2 {
   text-align: center;
   margin: 50px 0;
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  font-size: 40px;
+  color: transparent;
+  font-weight: 800;
+  font-size: 3rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
-main h4 {
-  color: rgb(255, 255, 255);
+main h3 {
+  color: rgb(0, 52, 82);
   text-align: center;
   margin-left: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 30px;
 }
@@ -390,11 +399,12 @@ main h4 {
   align-content: center;
   align-items: center;
 }
-.realisation__cartes--contenu h2 {
+.realisation__cartes--contenu h3 {
   font-size: 14px;
   text-transform: capitalize;
   align-content: center;
   align-items: center;
+  color: rgb(255, 255, 255);
 }
 .realisation__cartes--contenu p {
   font-size: 12px;
@@ -450,9 +460,6 @@ main h4 {
   color: transparent;
   box-shadow: #0a0a0a;
   border: 2px solid;
-  -o-border-image: linear-gradient(to right, #BF953F, #FCF6BA, #FBF5B7, #AA771C) 1 100%;
-     border-image: linear-gradient(to right, #BF953F, #FCF6BA, #FBF5B7, #AA771C) 1 100%;
-  border-radius: 10px;
 }
 .presentation__container {
   display: flex;
@@ -474,10 +481,8 @@ main h4 {
   padding: 10px;
 }
 .presentation__container--carte-para {
-  color: rgb(255, 255, 255);
-}
-.presentation__container--carte h4 {
-  margin-bottom: 0;
+  color: rgb(0, 52, 82);
+  font-size: 15px;
 }
 .presentation__container--image {
   display: flex;
@@ -499,10 +504,13 @@ main h4 {
   align-self: center;
   align-items: center;
 }
+.educ h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
 .educ p {
   font-size: 14px;
-  font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   text-align: center;
 }
 .educ__globale {
@@ -511,23 +519,20 @@ main h4 {
   justify-content: space-between;
   align-content: center;
 }
-.educ__rncp, .educ__php, .educ__master {
+.educ__globale--container {
   display: flex;
   flex-flow: column wrap;
   padding: 10px;
 }
-.educ__rncp ul li {
-  list-style: disc;
+.educ__globale--container:not(:hover) {
+  opacity: 0.8;
 }
-.educ__php ul li {
-  list-style: none;
-}
-.educ__image {
+.educ__globale--container-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.educ__image img {
+.educ__globale--container-image img {
   width: 100px;
 }
 
@@ -554,20 +559,23 @@ main h4 {
   justify-content: center;
 }
 .comp__container--circle {
-  width: 150px;
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
 }
 .comp__container--circle-border {
-  display: flex;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: rgb(0, 52, 82);
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  background: rgb(0, 52, 82);
   transition: all 0.3s ease-in-out;
+}
+.comp__container--circle-border:not(:hover) {
+  opacity: 0.9;
 }
 .comp__container--circle-border-content {
   width: 100%;
@@ -575,7 +583,7 @@ main h4 {
   border-radius: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   align-self: center;
 }
@@ -586,10 +594,11 @@ main h4 {
   color: rgb(255, 165, 0);
 }
 .comp__container p {
-  margin-top: 20px;
+  font-size: 12px;
   margin-bottom: 0;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  margin-top: 0px;
 }
 .comp__container #react,
 .comp__container #github,
@@ -602,48 +611,51 @@ main h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
 }
-.exp .exp__pro {
+.exp__pro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 30px;
-  width: 100%;
 }
-.exp .exp__pro h4 {
-  padding-bottom: 10px;
-  font-size: 16px;
-  text-align: center;
-  font-weight: 500;
-  align-self: center;
-}
-.exp .exp__pro ul {
-  padding-left: 0;
-}
-.exp .exp__pro ul li {
-  list-style: none;
-}
-.exp .exp__pro--container {
+.exp__pro--container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
-.exp .exp__pro--container-synergie, .exp .exp__pro--container-nowsite, .exp .exp__pro--container-randstad, .exp .exp__pro--container-dropizi, .exp .exp__pro--container-praxion, .exp .exp__pro--container-covea {
+.exp__pro--container-inner {
   display: flex;
   flex-flow: column wrap;
-  padding: 10px;
+  justify-content: center;
   width: 350px;
+  overflow: hidden;
+}
+.exp__pro--container-inner h3 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  align-self: center;
+  margin-bottom: 10px;
+  color: rgb(0, 52, 82);
+}
+.exp__pro--container-inner p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
 }
 
 /* CAROUSEL */
 .carousel {
   position: relative;
-  height: 300px;
+  height: 200px;
   overflow: hidden;
-  padding: 0;
+  padding: 30px 0;
 }
 .carousel__container {
   position: absolute;
@@ -667,8 +679,8 @@ main h4 {
   box-shadow: 3px 5px 5px rgb(0, 0, 0);
 }
 .carousel__container--element-img {
-  height: 300px;
-  width: 533px;
+  height: 200px;
+  width: 400px;
 }
 @-webkit-keyframes carouselAnimation {
   100% {
@@ -689,9 +701,10 @@ footer {
   width: 100%;
   color: rgb(255, 255, 255);
   background-color: rgb(0, 52, 82);
+  padding: 30px 0;
   overflow: hidden;
 }
-footer h5 {
+footer h4 {
   font-size: 20px;
   color: rgb(255, 165, 0);
 }
@@ -719,10 +732,10 @@ footer a {
 footer .footer__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: rgb(0, 52, 82);
   opacity: 2;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 footer .footer__nav--contact, footer .footer__nav--menu {
   display: flex;
@@ -730,6 +743,9 @@ footer .footer__nav--contact, footer .footer__nav--menu {
 }
 footer .footer__nav--contact a:hover, footer .footer__nav--menu a:hover {
   color: rgb(255, 165, 0);
+}
+footer .footer__nav--menu {
+  justify-content: space-around;
 }
 footer .footer__nav--contact {
   display: flex;
@@ -780,7 +796,7 @@ footer .footer__copyright {
     align-items: center;
   }
   .main__content {
-    width: 70%;
+    max-width: 1000px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
@@ -791,25 +807,12 @@ footer .footer__copyright {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  header {
-    width: 100%;
-  }
   .navbar {
     align-items: center;
     margin-top: 3px;
   }
   .navbar__logo {
-    margin-left: 0px;
-  }
-  .presentation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .presentation img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-left: 50px;
   }
   .banniere {
     background-position: top;
@@ -828,8 +831,23 @@ footer .footer__copyright {
     width: 100%;
     overflow: visible;
   }
+  main .main__content {
+    width: 800px;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
   main .banniere__texte--l {
     font-size: 30px;
+  }
+  main .realisation__maquette,
+main .realisation__integration,
+main .realisation__back,
+main .realisation__site,
+main .realisation__independant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   main .realisation {
     display: flex;
@@ -843,18 +861,24 @@ footer .footer__copyright {
     justify-content: center;
     align-items: center;
   }
+  .presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .presentation img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   body {
-    background-image: url("/assets/images/bg-768.jpg");
-    background-position: center center;
+    background-image: url("/assets/images/bg-992.svg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-width: 992px;
-  }
-  header {
-    width: 100%;
   }
   .navbar__logo {
     display: flex;
@@ -864,14 +888,14 @@ footer .footer__copyright {
   }
   .banniere {
     background-position: top;
-    font-size: 25px;
+    font-size: 30px;
     height: 308px;
-    margin-top: 15px;
-    margin-left: 50px;
+    margin-top: 0px;
+    padding-top: 30px;
     overflow: hidden;
   }
   .banniere p {
-    font-size: 35px;
+    font-size: 40px;
     justify-items: center;
     align-content: center;
     align-items: center;
@@ -879,13 +903,45 @@ footer .footer__copyright {
   .banniere a {
     font-size: 15px;
   }
-  main {
-    width: 100%;
+  main .main__content {
+    max-width: 800px;
   }
-  .main__content {
+  main h2 {
+    font-size: 2rem;
+  }
+  main .main__content {
     display: flex;
     max-width: 800px;
     overflow: hidden;
+  }
+  .realisation__presentation img {
+    width: 90px;
+    height: 188px;
+  }
+  .realisation__maquette,
+.realisation__integration,
+.realisation__back,
+.realisation__site,
+.realisation__independant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .realisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .realisation__cartes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .realisation__cartes--media {
+    width: 100%;
   }
   .portfolio {
     display: flex;
@@ -905,21 +961,20 @@ footer .footer__copyright {
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   body {
-    background-image: url("/assets/images/bg-576.jpg");
+    background-image: url("/assets/images/bg-768.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  body h3 {
+  main .main__content {
+    max-width: 600px;
+  }
+  main h2 {
     font-size: 30px;
   }
-  body h4 {
+  main h3 {
     font-size: 20px;
-  }
-  header {
-    width: 100%;
-    overflow: hidden;
   }
   .navbar__logo {
     margin-left: 50px;
@@ -929,12 +984,11 @@ footer .footer__copyright {
     background-position: center;
     font-size: 20px;
     height: 308px;
-    margin-top: 30px;
-    padding-top: 10px;
-    margin-left: 50px;
+    margin-top: 0px;
+    padding-top: 30px;
   }
   .banniere p {
-    font-size: 25px;
+    font-size: 35px;
     justify-items: center;
     align-content: center;
     align-items: center;
@@ -943,9 +997,6 @@ footer .footer__copyright {
     height: 20px;
     font-size: 13px;
     padding: 4px;
-  }
-  h4 {
-    font-size: 20px;
   }
   .presentation {
     display: flex;
@@ -970,14 +1021,18 @@ footer .footer__copyright {
     max-width: 220px;
     max-height: 235px;
   }
-  .educ {
-    width: 70%;
+  .educ h3,
+.educ p {
+    font-size: 12px;
   }
   .educ__global {
-    width: 70%;
+    max-width: 450px;
   }
   .educ__rncp, .educ__php, .educ__master {
     width: 70%;
+  }
+  .educ__rncp img, .educ__php img, .educ__master img {
+    width: 50px;
   }
   .comp__container-box {
     width: 50%;
@@ -997,40 +1052,56 @@ footer .footer__copyright {
   }
   .carousel__container--element-img {
     height: 200px;
-    width: 333px;
+    width: 400px;
   }
-  footer {
-    width: 100%;
-    overflow: hidden;
+  .exp__pro--container {
+    flex-wrap: wrap;
   }
-  footer h5 {
+  .exp__pro--container h3 {
     font-size: 14px;
   }
-  .footer__nav {
-    padding-left: 30px;
-    width: 80%;
+  .exp__pro--container p {
+    font-size: 12px;
   }
-  .footer__nav--reseauxs-icones {
-    display: flex;
+  .exp__pro--container #nowsite,
+.exp__pro--container #dropizi,
+.exp__pro--container #covea {
+    margin-top: 20px;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer ul li {
+    justify-content: center;
+  }
+  footer .footer__nav {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer__nav--menu, footer .footer__nav--contact, footer .footer__nav--reseauxs {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  footer .footer__nav--menu {
+    line-height: 30px;
+  }
+  #titre1footer {
+    margin-bottom: 1.67em;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
   body {
-    background-image: url("/assets/images/bg-320.jpg");
-    background-position: center center;
+    background-image: url("/assets/images/bg-320s.svg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-  header {
-    width: 100%;
   }
   .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 0;
   }
   .navbar__logo {
@@ -1041,20 +1112,24 @@ footer .footer__copyright {
     padding-left: 20px;
   }
   .navbar__logo h1 {
-    font-size: 15px;
+    font-size: 25px;
   }
   .navbar__menu--burger {
     display: flex;
     justify-content: flex-end;
   }
-  h1 {
-    font-size: 20px;
+  main h2 {
+    font-size: 1.75rem;
   }
   main h3 {
-    font-size: 22px;
-  }
-  main h4 {
     font-size: 20px;
+    margin-bottom: 0px;
+  }
+  main h1 {
+    font-size: 20px;
+  }
+  main .main__content {
+    max-width: 700px;
   }
   .banniere {
     background-position: center;
@@ -1073,6 +1148,9 @@ footer .footer__copyright {
     font-size: 13px;
     padding: 4px;
   }
+  .banniere____texte--l {
+    font-size: 30px;
+  }
   #menu ul {
     display: flex;
     justify-content: space-between;
@@ -1084,12 +1162,33 @@ footer .footer__copyright {
   #menu a {
     margin-bottom: 0px;
   }
-  .banniere__texte--l {
-    font-size: 30px;
-  }
   .realisation__presentation img {
     width: 90px;
     height: 188px;
+  }
+  .realisation__maquette,
+.realisation__integration,
+.realisation__back,
+.realisation__site,
+.realisation__independant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .realisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .realisation__cartes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    width: 275px;
+    position: relative;
   }
   .presentation {
     display: flex;
@@ -1113,9 +1212,6 @@ footer .footer__copyright {
     margin-top: 20px;
     line-height: 1rem;
   }
-  .presentation__container--carte h4 {
-    font-size: 20px;
-  }
   .presentation__image {
     display: flex;
     flex-direction: row;
@@ -1125,40 +1221,6 @@ footer .footer__copyright {
     height: 250px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0);
   }
-  .realisation__maquette,
-.realisation__integration,
-.realisation__back,
-.realisation__site,
-.realisation__independant {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .realisation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .realisation__cartes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 130px;
-    width: 220px;
-    position: relative;
-  }
-  .realisation__cartes--media {
-    width: 100%;
-  }
-  .comp__container-box {
-    width: 50%;
-  }
   .comp__container--circle {
     width: 70px;
   }
@@ -1166,18 +1228,16 @@ footer .footer__copyright {
     height: 70px;
     width: 70px;
   }
+  .comp__container--circle-border i {
+    font-size: 1.5em;
+  }
   .comp__container--circle-border p {
     font-size: 10px;
     text-transform: capitalize;
     margin-top: 17px;
   }
-  .comp__container--circle-border i {
-    font-size: 1.5em;
-  }
-  #git-content,
-#sass-content,
-#react-content {
-    margin-top: 0;
+  .comp__container--circle-border-content {
+    justify-content: center;
   }
   .comp__icones {
     display: flex;
@@ -1185,12 +1245,13 @@ footer .footer__copyright {
     margin-bottom: 10px;
     align-content: center;
   }
-  .educ h4 {
-    font-size: 14px;
-    text-align: center;
+  #git-content,
+#sass-content,
+#react-content {
+    margin-top: 0;
+    padding-top: 0px;
   }
   .educ__globale {
-    display: flex;
     flex-direction: column;
   }
   .educ__image {
@@ -1199,52 +1260,36 @@ footer .footer__copyright {
     justify-content: center;
   }
   .educ__image img {
-    width: 70px;
-  }
-  #sablier {
     width: 50px;
-    padding-bottom: 10px;
   }
-  .exp h4 {
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .exp .exp__pro {
-    margin-left: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .exp .exp__pro--container {
+  .exp__pro--container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
   }
-  .exp .exp__pro--container li {
+  .exp__pro--container-inner {
+    padding-bottom: 20px;
+    width: 320px;
+  }
+  .exp__pro--container-inner h3 {
     font-size: 14px;
-  }
-  .exp .exp__pro-synergie, .exp .exp__pro-nowsite, .exp .exp__pro-randstad, .exp .exp__pro-dropizi, .exp .exp__pro-praxion, .exp .exp__pro-covea {
-    display: flex;
-    justify-content: space-between;
-  }
-  .exp .exp__pro--container-synergie {
-    justify-content: center;
-    width: auto;
-    overflow: hidden;
-    padding-left: 0;
+    margin-bottom: 15px;
+    margin-top: 15;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .carousel {
     height: 150px;
   }
+  .carousel__container {
+    right: auto;
+    left: auto;
+  }
   .carousel__container--element-img {
     height: 150px;
     width: 233px;
-  }
-  footer {
-    width: 100%;
-    margin-top: 30px;
   }
   footer h5 {
     text-align: center;
@@ -1253,7 +1298,6 @@ footer .footer__copyright {
     justify-content: center;
   }
   footer .footer__nav {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1261,6 +1305,9 @@ footer .footer__copyright {
   footer .footer__nav--menu, footer .footer__nav--contact, footer .footer__nav--reseauxs {
     padding-bottom: 30px;
     text-align: center;
+  }
+  footer .footer__nav--menu {
+    line-height: 30px;
   }
   #titre1footer {
     margin-bottom: 1.67em;
