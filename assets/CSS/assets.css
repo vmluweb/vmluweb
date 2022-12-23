@@ -1,8 +1,5 @@
 /* FONTS */
-@font-face {
-  font-family: "Viaoda Libre";
-  src: url(font/Viaoda_Libre/ViaodaLibre-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,800;1,800&family=Orbitron:wght@400;500;700;800&display=swap");
 /* RESET */
 * {
   padding: 0;
@@ -19,7 +16,7 @@ html body {
 
 body {
   color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -48,14 +45,14 @@ header {
 }
 .navbar__logo h1 {
   margin-bottom: 0;
-  font-family: "Viaoda Libre";
-  font-size: 30px;
-  align-content: center;
-  text-align: center;
 }
 .navbar__logo a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  align-content: center;
+  text-align: center;
 }
 .navbar__menu {
   display: flex;
@@ -311,14 +308,12 @@ main .main__content {
 main h2 {
   text-align: center;
   margin: 50px 0;
-  color: transparent;
+  color: rgb(255, 255, 255);
   font-weight: 800;
   font-size: 3rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 main h3 {
-  color: rgb(0, 52, 82);
+  color: rgb(255, 255, 255);
   text-align: center;
   margin-left: 0px;
   margin-bottom: 20px;
@@ -481,7 +476,7 @@ main h3 {
   padding: 10px;
 }
 .presentation__container--carte-para {
-  color: rgb(0, 52, 82);
+  color: rgb(255, 255, 255);
   font-size: 15px;
 }
 .presentation__container--image {
@@ -766,13 +761,20 @@ footer .footer__nav--reseauxs-icones {
 footer .footer__nav--reseauxs i:hover {
   color: rgb(255, 165, 0);
 }
-footer .footer__nav--chevron {
+footer .footer__nav--chevron,
+footer .footer__nav .footer__logo {
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
 }
-footer .footer__nav--chevron a:hover {
+footer .footer__nav--chevron a:hover,
+footer .footer__nav .footer__logo a:hover {
   color: rgb(255, 165, 0);
+}
+footer .footer__logo {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 footer .footer__copyright {
   display: flex;
@@ -1310,6 +1312,6 @@ main .realisation__independant {
     line-height: 30px;
   }
   #titre1footer {
-    margin-bottom: 1.67em;
+    margin-top: 1.67em;
   }
 }/*# sourceMappingURL=assets.css.map */
