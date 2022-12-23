@@ -1,5 +1,4 @@
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,800;1,800&family=Orbitron:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,800;1,600;1,800&family=Orbitron:wght@400;500;700;800&display=swap");
 /* RESET */
 * {
   padding: 0;
@@ -19,6 +18,22 @@ body {
   font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
 }
+body h2 {
+  text-align: center;
+  margin: 50px 0;
+  font-weight: 800;
+  font-size: 2.75rem;
+}
+body h3 {
+  text-align: center;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+}
+body a {
+  text-decoration: none;
+}
 
 header {
   width: 100%;
@@ -30,15 +45,11 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: transparent;
-  color: rgb(255, 255, 255);
   padding: 10px 30px 10px 30px;
   text-align: center;
   justify-content: space-around;
   margin-top: 20px;
   overflow: hidden;
-}
-.navbar a {
-  text-decoration: none;
 }
 .navbar__logo {
   display: flex;
@@ -47,7 +58,6 @@ header {
   margin-bottom: 0;
 }
 .navbar__logo a {
-  text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: "Orbitron", sans-serif;
   font-weight: 800;
@@ -91,150 +101,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 996px) {
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 0;
-  }
-  .navbar__logo h1 {
-    margin-left: 50px;
-  }
-  .navbar__menu {
-    display: none;
-  }
-  .navbar body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  header {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  .navbar__menu--burger {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-  }
-  #burger-menu {
-    cursor: pointer;
-    height: 27px;
-    width: 27px;
-    margin: 0 50px 50px 50px;
-    top: 25px;
-    position: relative;
-    z-index: 2;
-  }
-  #burger-menu span,
-#burger-menu span:before,
-#burger-menu span:after {
-    background: rgb(255, 255, 255);
-    display: block;
-    height: 2px;
-    opacity: 1;
-    position: absolute;
-    transition: 0.3s ease-in-out;
-  }
-  #burger-menu span:before,
-#burger-menu span:after {
-    content: "";
-  }
-  #burger-menu span::before {
-    left: 0px;
-    top: -10px;
-    width: 27px;
-  }
-  #burger-menu span {
-    right: 0px;
-    top: 13px;
-    width: 27px;
-  }
-  #burger-menu span::after {
-    left: 0px;
-    top: 10px;
-    width: 27px;
-  }
-  #burger-menu.ferme span::before {
-    left: 0px;
-    transform: rotate(90deg);
-    width: 27px;
-    top: 0;
-  }
-  #burger-menu.ferme span {
-    transform: rotate(-45deg);
-    top: 16px;
-    width: 27px;
-  }
-  #burger-menu.ferme span::after {
-    top: 0px;
-    left: 0;
-    transform: rotate(90deg);
-    opacity: 0;
-    width: 0;
-  }
-  #menu {
-    z-index: 1;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 0;
-    visibility: hidden;
-    opacity: 0;
-    text-align: center;
-    padding-top: 20px;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-  }
-  #menu.overlay {
-    visibility: visible;
-    opacity: 1;
-    padding-top: 100px;
-    background: rgba(0, 0, 0, 0.7);
-    left: 0;
-    width: 70%;
-    overflow: hidden;
-  }
-  #menu ul {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #menu li {
-    list-style: none;
-  }
-  #menu li:hover a:hover {
-    background-color: rgb(255, 165, 0);
-    filter: opacity(20%);
-    text-transform: uppercase;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(0, 52, 82);
-    transition: all 0.4s ease;
-  }
-  #menu a {
-    color: rgb(255, 165, 0);
-    display: block;
-    font-size: 32px;
-    margin-bottom: 30px;
-    text-decoration: none;
-  }
-}
 .banniere {
-  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -266,8 +133,6 @@ header {
   background: transparent;
   text-transform: capitalize;
   font-size: 20px;
-  text-decoration: none;
-  border-color: rgb(255, 255, 255);
   border-radius: 10px;
   color: rgb(255, 255, 255);
   transition: 0.3s;
@@ -278,7 +143,6 @@ header {
 }
 .banniere a:hover {
   background-color: rgba(191, 148, 63, 0.363);
-  color: rgb(255, 255, 255);
   padding: 10px 15px;
   text-transform: uppercase;
 }
@@ -292,11 +156,6 @@ main {
   width: 100%;
   overflow: hidden;
 }
-main .portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 main .main__content {
   width: 1200px;
   position: relative;
@@ -305,20 +164,10 @@ main .main__content {
   flex-direction: column;
   overflow: hidden;
 }
-main h2 {
-  text-align: center;
-  margin: 50px 0;
-  color: rgb(255, 255, 255);
-  font-weight: 800;
-  font-size: 3rem;
-}
-main h3 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin-left: 0px;
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-size: 30px;
+main .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .realisation__presentation {
@@ -390,7 +239,6 @@ main h3 {
   align-items: center;
 }
 .realisation__cartes--contenu {
-  color: rgb(255, 255, 255);
   align-content: center;
   align-items: center;
 }
@@ -399,7 +247,7 @@ main h3 {
   text-transform: capitalize;
   align-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
 .realisation__cartes--contenu p {
   font-size: 12px;
@@ -418,6 +266,9 @@ main h3 {
 .realisation__cartes--media #todolist {
   width: 100%;
   align-self: center;
+}
+.realisation__cartes .visite {
+  background-color: rgb(255, 255, 255);
 }
 
 .realisation__cartes .realisation__cartes--contenu {
@@ -454,7 +305,8 @@ main h3 {
   max-width: 640px;
   color: transparent;
   box-shadow: #0a0a0a;
-  border: 2px solid;
+  background: rgba(0, 52, 82, 0.452);
+  box-shadow: 1px 1px 2px 1px rgba(165, 196, 209, 0.7019607843);
 }
 .presentation__container {
   display: flex;
@@ -476,8 +328,9 @@ main h3 {
   padding: 10px;
 }
 .presentation__container--carte-para {
+  font-weight: 600;
+  font-style: italic;
   color: rgb(255, 255, 255);
-  font-size: 15px;
 }
 .presentation__container--image {
   display: flex;
@@ -582,17 +435,16 @@ main h3 {
   align-items: center;
   align-self: center;
 }
-.comp__container i {
+.comp__container--circle-border-content i {
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: rgb(255, 165, 0);
 }
-.comp__container p {
+.comp__container--circle-border-content p {
   font-size: 12px;
   margin-bottom: 0;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
   margin-top: 0px;
 }
 .comp__container #react,
@@ -634,7 +486,6 @@ main h3 {
   font-weight: 700;
   align-self: center;
   margin-bottom: 10px;
-  color: rgb(0, 52, 82);
 }
 .exp__pro--container-inner p {
   display: flex;
@@ -649,8 +500,8 @@ main h3 {
 .carousel {
   position: relative;
   height: 200px;
-  overflow: hidden;
   padding: 30px 0;
+  overflow: hidden;
 }
 .carousel__container {
   position: absolute;
@@ -694,7 +545,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  color: rgb(255, 255, 255);
   background-color: rgb(0, 52, 82);
   padding: 30px 0;
   overflow: hidden;
@@ -722,15 +572,17 @@ footer ul li i {
 }
 footer a {
   color: rgb(255, 255, 255);
-  text-decoration: none;
 }
 footer .footer__nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(0, 52, 82);
-  opacity: 2;
   padding: 0 30px 30px 30px;
+}
+footer .footer__nav--logo {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 footer .footer__nav--contact, footer .footer__nav--menu {
   display: flex;
@@ -740,6 +592,8 @@ footer .footer__nav--contact a:hover, footer .footer__nav--menu a:hover {
   color: rgb(255, 165, 0);
 }
 footer .footer__nav--menu {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 footer .footer__nav--contact {
@@ -761,20 +615,12 @@ footer .footer__nav--reseauxs-icones {
 footer .footer__nav--reseauxs i:hover {
   color: rgb(255, 165, 0);
 }
-footer .footer__nav--chevron,
-footer .footer__nav .footer__logo {
+footer .footer__nav--chevron, footer .footer__nav--logo {
   display: flex;
   align-items: center;
-  color: rgb(255, 255, 255);
 }
-footer .footer__nav--chevron a:hover,
-footer .footer__nav .footer__logo a:hover {
+footer .footer__nav--chevron a:hover, footer .footer__nav--logo a:hover {
   color: rgb(255, 165, 0);
-}
-footer .footer__logo {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 800;
-  font-size: 1.5rem;
 }
 footer .footer__copyright {
   display: flex;
@@ -908,6 +754,11 @@ main .realisation__independant {
   main .main__content {
     max-width: 800px;
   }
+  main .main__content .portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   main h2 {
     font-size: 2rem;
   }
@@ -944,21 +795,6 @@ main .realisation__independant {
   }
   .realisation__cartes--media {
     width: 100%;
-  }
-  .portfolio {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .educ {
-    width: 85%;
-  }
-  .educ__global {
-    width: 70%;
-  }
-  footer {
-    width: 100%;
-    overflow: hidden;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -1039,16 +875,6 @@ main .realisation__independant {
   .comp__container-box {
     width: 50%;
   }
-  .comp__container--circle {
-    width: 100px;
-  }
-  .comp__container--circle-border {
-    height: 100px;
-    width: 100px;
-  }
-  .comp__container--circle-border p {
-    font-size: 12px;
-  }
   .carousel {
     height: 200px;
   }
@@ -1089,7 +915,7 @@ main .realisation__independant {
     line-height: 30px;
   }
   #titre1footer {
-    margin-bottom: 1.67em;
+    margin-top: 1.67em;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
@@ -1121,11 +947,11 @@ main .realisation__independant {
     justify-content: flex-end;
   }
   main h2 {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
   main h3 {
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   main h1 {
     font-size: 20px;
@@ -1230,22 +1056,16 @@ main .realisation__independant {
     height: 70px;
     width: 70px;
   }
-  .comp__container--circle-border i {
-    font-size: 1.5em;
-  }
-  .comp__container--circle-border p {
-    font-size: 10px;
-    text-transform: capitalize;
-    margin-top: 17px;
-  }
   .comp__container--circle-border-content {
     justify-content: center;
   }
-  .comp__icones {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-    align-content: center;
+  .comp__container--circle-border-content i {
+    font-size: 1.5em;
+  }
+  .comp__container--circle-border-content p {
+    font-size: 10px;
+    text-transform: capitalize;
+    margin-top: 17px;
   }
   #git-content,
 #sass-content,
@@ -1293,7 +1113,7 @@ main .realisation__independant {
     height: 150px;
     width: 233px;
   }
-  footer h5 {
+  footer h4 {
     text-align: center;
   }
   footer ul li {
@@ -1313,5 +1133,138 @@ main .realisation__independant {
   }
   #titre1footer {
     margin-top: 1.67em;
+  }
+}
+@media screen and (max-width: 996px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .navbar__logo h1 {
+    margin-left: 50px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .navbar__menu--burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+  }
+  #burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 0 50px 50px 50px;
+    top: 25px;
+    position: relative;
+    z-index: 2;
+  }
+  #burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: rgb(255, 255, 255);
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  #burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+  }
+  #burger-menu span::before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+  #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  #burger-menu span::after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+  #burger-menu.ferme span::before {
+    left: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    top: 0;
+  }
+  #burger-menu.ferme span {
+    transform: rotate(-45deg);
+    top: 16px;
+    width: 27px;
+  }
+  #burger-menu.ferme span::after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+  #menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    width: 70%;
+    overflow: hidden;
+  }
+  #menu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #menu li {
+    list-style: none;
+  }
+  #menu li:hover a:hover {
+    background-color: rgb(255, 165, 0);
+    filter: opacity(20%);
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 52, 82);
+    transition: all 0.4s ease;
+  }
+  #menu a {
+    color: rgb(255, 165, 0);
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=assets.css.map */
