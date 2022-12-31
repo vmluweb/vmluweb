@@ -1,11 +1,12 @@
-// SELECTION DES ELEMENTS DANS LE DOM
+function openMenu() {
+  const btnNav = document.querySelector("#burger-menu");
+  const menu = document.querySelector(".navbar__menu ul");
 
-const burgerMenu = document.querySelector("#burger-menu");
-const overlay = document.querySelector("#menu");
+  // let menuItems =
 
-// AJOUT EVENEMENT ONCLICK POUR OUVRIR ET FERMER LE BURGER MENU
-
-burgerMenu.onclick = function () {
-  this.classList.toggle("ferme");
-  overlay.classList.toggle("overlay");
-};
+  btnNav.addEventListener("click", () => {
+    btnNav.classList.toggle("open__menu");
+    menu.classList.toggle("open");
+  });
+}
+openMenu();

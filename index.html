@@ -12,11 +12,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/CSS/assets.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,800;1,800&family=Orbitron:wght@400;500;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- JS -->
     <script src="./assets/js/burger-menu.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
@@ -26,65 +25,53 @@
 <body>
     <header>
         <!-- DEBUT BARRE DE NAVIGATION -->
-        <nav class="navbar" role="navigation">
-
-            <!-- DEBUT LOGO -->
-            <h1 class="navbar__logo"><a href="#">VML</a></h1>
-            <!-- FIN LOGO -->
-
-            <!-- DEBUT NAV BURGER MENU -->
-            <nav class="navbar__menu--burger">
-
-                <!-- DEBUT BURGER MENU -->
-                <div id="burger-menu">
-                    <span></span>
-                </div>
-                <!-- FIN BURGER MENU -->
-
-                <!-- DEBUT CONTENU BURGER MENU -->
-                <div id="menu">
-                    <ul>
-                        <li><a href="#projet">Portfolio</a></li>
-                        <li><a href="#presentation">Présentation</a></li>
-                        <li><a href="#educ">Formation</a></li>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/images/android-chrome-192x192.png" alt="logo">
+                    <h1>&nbsp;Vina MARIE-LUCE</h1>
+                </a>
+            </div>
+            <nav class="nav__menu">
+                <!-- DEBUT MENU -->
+                <nav class="navbar__menu" id="menu">
+                    <ul class="navbar__menu--list">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">A propos</a></li>
+                        <li><a href="#educ">Formations</a></li>
                         <li><a href="#comp">Compétences</a></li>
-                        <li><a href="#exp">Expériences professionnelles</a></li>
+                        <li><a href="#exp">Parcours</a></li>
                     </ul>
-                </div>
-                <!-- FIN CONTENU BURGER MENU -->
-            </nav>
-            <!-- FIN NAV BURGER MENU -->
 
-            <!-- DEBUT MENU CLASSIQUE -->
-            <nav class="navbar__menu">
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#educ">Formation</a></li>
-                    <li><a href="#comp">Compétences</a></li>
-                    <li><a href="#exp">Expériences professionnelles</a></li>
-                </ul>
+
+                </nav>
+                <!-- FIN NAV MENU -->
+                <!-- DEBUT BURGER MENU -->
+                <button id="burger-menu">
+                    <span></span>
+                </button>
+                <!-- FIN BURGER MENU -->
             </nav>
-            <!-- FIN MENU CLASSIQUE -->
         </nav>
-        <!-- FIN BARRE DE NAVIGATION -->
-
-        <!-- DEBUT BANNIERE -->
-        <div class="banniere">
-            <p class="banniere__texte1">Développeuse Web: <br>disponible</p>
-            en contrat de professionnalisation
-            <a download href="./assets/pdf/CV_Vina_MARIE-LUCE_Oct_2022.pdf">Télécharger CV</a>
-        </div>
-        <!-- FIN BANNIERE -->
+        <!--   FIN NAVBAR   -->
     </header>
+    <!-- FIN BARRE DE NAVIGATION -->
 
+    <!-- DEBUT BANNIERE -->
+    <div class="banniere">
+        <p class="banniere__texte1">Développeuse Web: <br>disponible</p>
+        en contrat de professionnalisation
+        <a download href="./assets/pdf/CV_Vina_MARIE-LUCE_Oct_2022.pdf">Télécharger CV</a>
+    </div>
+    <!-- FIN BANNIERE -->
 
     <!-- CONTENU PRINCIPAL -->
     <main>
         <div class="main__content">
-            <!-- REALISATIONS -->
+            <!-- PORTFOLIO -->
             <section class="portfolio">
-                <h2 id="projet">Portfolio</h2>
+                <h2 id="portfolio">Portfolio</h2>
                 <h3><strong>Conception Web</strong></h3>
                 <div class="realisation__maquette">
                     <!-- CARTE 3 IMAGE1 -->
@@ -98,7 +85,7 @@
                     </div>
                     <div class="realisation__cartes">
                         <img id="maquette__ux" class="realisation__cartes--media" src="assets/images/Maquette-UX-UI.jpg"
-                            alt="Maquette-UX-UI">
+                            alt="Maquette">
                         <div class="realisation__cartes--contenu">
                             <h3>Maquette UX/UI | 09/2022</h3>
                             <p>FIGMA</p>
@@ -110,7 +97,7 @@
                     <!-- CARTE 2 VIDEO1 -->
                     <div id="carte2video1" class="realisation__cartes">
                         <video id="video1" class="realisation__cartes--media" controls>
-                            <source src="./assets/videos/systematic.mp4" alt="intégration web" type="video/mp4" />
+                            <source src="./assets/videos/systematic.mp4" type="video/mp4" />
                         </video>
                         <div id="carte2contenu" class="realisation__cartes--contenu">
                             <h3>intégration Web | 09/2022</h3>
@@ -161,8 +148,7 @@
                     <!-- CARTE 4 VIDEO2 -->
                     <div id="carte4video2" class="realisation__cartes">
                         <video id="video2" class="realisation__cartes--media" controls muted>
-                            <source src="./assets/videos/projet-e-commerce.mp4" alt="O'trink - HTML-CSS-PHP"
-                                type="video/mp4" />
+                            <source src="./assets/videos/projet-e-commerce.mp4" type="video/mp4" />
                         </video>
                         <div id="carte4contenu" class="realisation__cartes--contenu">
                             <h3>Projet e-commerce PrestaShop | 06/2022</h3>
@@ -196,46 +182,41 @@
                     </div>
 
                     <div class="realisation__cartes">
-                        <img id="maquette__uxui" class="realisation__cartes--media" src="./assets/images/force+++.png"
-                            alt="Maquette-UX-UI">
+                        <img id="catalogue" class="realisation__cartes--media" src="./assets/images/force+++.png"
+                            alt="catalogue">
                         <div class="realisation__cartes--contenu">
-                            <h3>Catalogue produit | 12/2022</h3>
+                            <h3>Catalogue produits | 12/2022</h3>
                             <p>FIGMA</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- RESUME -->
-            <h2 id="presentation">Présentation</h2>
+            <!-- A PROPOS -->
+            <h2 id="about">A propos</h2>
             <div class="presentation">
                 <div class="presentation__container">
-                    <div class="presentation__container--image">
-                        <img src="./assets/images/4.png" alt="Photo de Vina">
-                    </div>
-                    <div class="presentation__container--carte">
-                        <p class="presentation__container--carte-para">
-                            Hello, moi c'est Vina !<br><br>
-                            Je me forme actuellement au Développement Web et Web
-                            Mobile, après avoir créé un site e-commerce en dropshipping dans
-                            l'univers des bijoux et
-                            développé une activité en Webmarketing. <br><br>Passionnée par les nouvelles technologies,
-                            je suis de près les avancées
-                            en
-                            matière
-                            d'innovation.
-                            Je m'intéresse activement à la programmation, au Marketing Digital, aux Humanités
-                            Numériques
-                            et à la Relation Client.<br>Très motivée, je recherche une entreprise en contrat de
-                            professionnalisation.<br><br>
-                            Rythme: 75% du temps en entreprise et 25% en centre
-                        </p>
-                    </div>
+                    <figure class="presentation__container--image">
+                        <img src="./assets/images/photonobgvml.png" alt="image de Vina">
+                        <figcaption>Vina MARIE-LUCE</figcaption>
+                    </figure>
+                    <p class="presentation__container--carte-para">
+                        Après avoir créé un site e-commerce en dropshipping dans
+                        l'univers des bijoux et
+                        développé une activité en Webmarketing, je me forme actuellement au Développement Web et Web
+                        Mobile. <br><br> Passionnée par les nouvelles technologies je
+                        suis de près les avancées en matière d'innovation.<br>
+                        Je m'intéresse activement à la programmation, au Marketing Digital, aux Humanités
+                        Numériques
+                        et à la Relation Client.<br>Je suis disponible pour apporter et concevoir les solutions web
+                        adaptées à votre projet.<br><br>
+                        <em>Rythme: 75% du temps en entreprise et 25% en centre</em>
+                    </p>
                 </div>
             </div>
 
-            <!-- Formation -->
+            <!-- FORMATIONS -->
 
-            <h2 id="educ">Formation</h2>
+            <h2 id="educ">Formations</h2>
             <div class="educ">
                 <div class="educ__globale">
                     <div class="educ__globale--container">
@@ -244,7 +225,7 @@
                         </div>
                         <h3><strong>DEVELOPPEUR WEB ET WEB MOBILE</strong></h3>
                         <p><em>Titre RNCP 5 - Bac+2</em></p>
-                        <p>DIGINAMIC
+                        <p><a href="https://www.diginamic.fr/" target="_blank"> DIGINAMIC</a>
                             MONTPELLIER | 09/2022</p>
                     </div>
 
@@ -254,7 +235,7 @@
                         </div>
                         <h3><strong>DEVELOPPEUR PRESTASHOP E-COMMERCE</strong></h3>
                         <p><em>Attestation de réussite</em></p>
-                        <p>DIGINAMIC MONTPELLIER | 06/2022</p>
+                        <p><a href="https://www.diginamic.fr/" target="_blank">DIGINAMIC</a> MONTPELLIER | 06/2022</p>
                     </div>
 
                     <div class="educ__globale--container">
@@ -267,7 +248,6 @@
                     </div>
                 </div>
             </div>
-            <!-- FIN FORMATION -->
 
             <!-- COMPETENCES -->
 
@@ -277,132 +257,102 @@
                     <!-- CERCLE HTML -->
                     <div class="comp__container-box">
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-html5 fa-2xl b-3 pt-3"></i>
-                                    </div>
-                                    <p>HTML5</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-brands fa-html5 fa-xl fa-fw fa-duotone b-3 pt-3"></i>
+                                <p>HTML5</p>
+                            </span>
                         </div>
                         <!-- CERCLE CSS3 -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-css3-alt fa-2xl pt-3"></i>
-                                    </div>
-                                    <p>css3</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-brands fa-css3-alt fa-xl fa-fw fa-duotone pt-3"></i>
+                                <p>CSS3</p>
+                            </span>
                         </div>
 
                         <!-- CERCLE JAVASCRIPT -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-js fa-2xl pt-3"></i>
-                                    </div>
-                                    <p>javascript</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-brands fa-js fa-xl fa-fw fa-duotone pt-3"></i>
+                                <p>javascript</p>
+                            </span>
                         </div>
 
                         <!-- CERCLE PHP -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-php fa-2xl pt-3"></i>
-                                    </div>
-                                    <p>php</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-brands fa-php fa-xl fa-fw fa-duotone pt-3"></i>
+                                <p>php</p>
+                            </span>
                         </div>
                     </div>
 
                     <div class="comp__container-box">
                         <!-- CERCLE BOOTSTRAP -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-bootstrap fa-2xl pt-3"></i>
-                                    </div>
-                                    <p>bootstrap</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-brands fa-bootstrap fa-xl fa-fw fa-duotone pt-3"></i>
+                                <p>bootstrap</p>
+                            </span>
                         </div>
                         <!-- CERCLE FIGMA -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-figma fa-2xl pt-3"></i>
-                                    </div>
-                                    <p>figma</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-brands fa-figma fa-xl fa-fw fa-duotone pt-3"></i>
+                                <p>figma</p>
+                            </span>
                         </div>
                         <!-- CERCLE WORDPRESS -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><i
-                                            class="fa-brands fa-wordpress fa-2xl pt-3"></i>
-                                    </div>
-                                    <p>wordpress</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <i
+                                    class="comp__container--circle-border-icone fa-duotone fa-brands fa-wordpress fa-xl fa-fw pt-3"></i>
+                                <p>wordpress</p>
+                            </span>
                         </div>
                     </div>
 
                     <div class="comp__container-box">
                         <!-- CERCLE REACT -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone">
-                                        <ion-icon id="react" name="logo-react" size="large"></ion-icon>
-                                    </div>
-                                    <p id="react-content">react</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <ion-icon class="comp__container--circle-border-icone" id="react" name="logo-react"
+                                    size="large">react</ion-icon>
+                                <p id="react-content">react</p>
+                            </span>
                         </div>
 
                         <!-- CERCLE GITHUB -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone"><ion-icon id="github"
-                                            name="logo-github" size="large"></ion-icon>
-                                    </div>
-                                    <p id="git-content">github</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <ion-icon class="comp__container--circle-border-icone" id="github" name="logo-github"
+                                    size="large"></ion-icon>
+                                <p id="git-content">github</p>
+                            </span>
                         </div>
                     </div>
 
                     <div class="comp__container-box">
                         <!-- CERCLE SASS -->
                         <div class="comp__container--circle">
-                            <div class="comp__container--circle-border">
-                                <div class="comp__container--circle-border-content">
-                                    <div class="comp__container--circle-border-content-icone">
-                                        <ion-icon id="sass" name="logo-sass" size="large"></ion-icon>
-                                    </div>
-                                    <p id="sass-content">sass</p>
-                                </div>
-                            </div>
+                            <span class="comp__container--circle-border">
+                                <ion-icon class="comp__container--circle-border-icone" id="sass" name="logo-sass"
+                                    size="large"></ion-icon>
+                                <p id="sass-content">sass</p>
+                            </span>
                         </div>
 
                     </div>
                 </div>
             </div>
             <!-- EXP PROFESSIONNELLES -->
-            <h2 id="exp">Expériences professionnelles</h2>
+            <h2 id="exp">Parcours</h2>
             <div class="exp">
                 <div class="exp__pro">
                     <div class="exp__pro--container">
@@ -485,24 +435,23 @@
     <!-- FOOTER -->
     <footer>
         <nav class="footer__nav">
-            <div class="footer__nav--logo"><a href="#">VML</a></div>
+            <div class="footer__nav--logo"><a href="#"><img src="/assets/images/favicon-32x32.png"></a></div>
             <div class="footer__nav--menu">
-                <h4 id="titre1footer">Menu de navigation</h4>
-                <a href="#projet">Portfolio</a>
-                <a href="#presentation">Présentation</a>
-                <a href="#educ">Formation</a>
+                <h4 id="titre1footer">Parcourez le cv</h4>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">A propos</a>
+                <a href="#educ">Formations</a>
                 <a href="#comp">Compétences</a>
-                <a href="#exp">Expériences professionnelles</a>
+                <a href="#exp">Parcours</a>
             </div>
 
             <div class="footer__nav--contact">
-                <h4>Contact</h4>
+                <h4>Contactez-moi</h4>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i>Localisation: Nîmes</li>
-                    <li><i class="fa-solid fa-phone"></i>Téléphone: 06 98 71 24 33</li>
-                    <li><i class="fa-solid fa-envelope"></i><a href="vina.marieluce@gmail.com">Email:
-                            vina.marieluce@gmail.com</a></li>
-                    <li><i class="fa-solid fa-car"></i>Permis B et véhicule</li>
+                    <li><i class="fa-solid fa-location-dot"></i>Nîmes, France</li>
+                    <li><i class="fa-solid fa-phone"></i>06 98 71 24 33</li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:vina.marieluce@gmail.com">Email</a></li>
+                    <!-- <li><i class="fa-solid fa-car"></i>Permis B et véhicule</li> -->
                 </ul>
             </div>
 
