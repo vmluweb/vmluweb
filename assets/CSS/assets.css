@@ -69,20 +69,11 @@ header {
 }
 .navbar .logo a img {
   width: 40px;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-name: logoAnimation;
-          animation-name: logoAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: logoAnimation;
   perspective: 5px;
-}
-@-webkit-keyframes logoAnimation {
-  100% {
-    transform: rotate3d(1, 1, 1, 180deg);
-  }
 }
 @keyframes logoAnimation {
   100% {
@@ -537,14 +528,10 @@ main .portfolio {
   position: absolute;
   display: flex;
   flex-direction: row;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-name: carouselAnimation;
-          animation-name: carouselAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: carouselAnimation;
   right: 0;
   margin-bottom: 30px;
   bottom: 0;
@@ -557,11 +544,6 @@ main .portfolio {
 .carousel__container--element-img {
   height: 200px;
   width: 400px;
-}
-@-webkit-keyframes carouselAnimation {
-  100% {
-    transform: translateX(calc(-150% + 500px));
-  }
 }
 @keyframes carouselAnimation {
   100% {
@@ -688,10 +670,10 @@ footer .footer__copyright {
     font-size: 2rem;
   }
   main .realisation__maquette,
-main .realisation__integration,
-main .realisation__back,
-main .realisation__site,
-main .realisation__independant {
+  main .realisation__integration,
+  main .realisation__back,
+  main .realisation__site,
+  main .realisation__independant {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -741,10 +723,10 @@ main .realisation__independant {
     font-size: 2rem;
   }
   main .realisation__maquette,
-main .realisation__integration,
-main .realisation__back,
-main .realisation__site,
-main .realisation__independant {
+  main .realisation__integration,
+  main .realisation__back,
+  main .realisation__site,
+  main .realisation__independant {
     flex-direction: column;
   }
 }
@@ -792,7 +774,7 @@ main .realisation__independant {
     max-height: 235px;
   }
   .educ h3,
-.educ p {
+  .educ p {
     font-size: 12px;
   }
   .educ__global {
@@ -814,8 +796,8 @@ main .realisation__independant {
     font-size: 12px;
   }
   .exp__pro--container #nowsite,
-.exp__pro--container #dropizi,
-.exp__pro--container #covea {
+  .exp__pro--container #dropizi,
+  .exp__pro--container #covea {
     margin-top: 20px;
   }
   .carousel {
@@ -887,10 +869,10 @@ main .realisation__independant {
     height: 188px;
   }
   .realisation__maquette,
-.realisation__integration,
-.realisation__back,
-.realisation__site,
-.realisation__independant {
+  .realisation__integration,
+  .realisation__back,
+  .realisation__site,
+  .realisation__independant {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -951,8 +933,8 @@ main .realisation__independant {
     justify-content: center;
   }
   #git-content,
-#sass-content,
-#react-content {
+  #sass-content,
+  #react-content {
     margin-top: 0;
     padding-top: 0px;
   }
@@ -1090,8 +1072,8 @@ main .realisation__independant {
     cursor: pointer;
   }
   .navbar .nav__menu #burger-menu span,
-.navbar .nav__menu #burger-menu span:before,
-.navbar .nav__menu #burger-menu span:after {
+  .navbar .nav__menu #burger-menu span:before,
+  .navbar .nav__menu #burger-menu span:after {
     height: 2px;
     width: 30px;
     border: 1px solid rgb(255, 255, 255);
@@ -1103,7 +1085,7 @@ main .realisation__independant {
     margin-bottom: 8px;
   }
   .navbar .nav__menu #burger-menu span:before,
-.navbar .nav__menu #burger-menu span:after {
+  .navbar .nav__menu #burger-menu span:after {
     content: "";
   }
   .navbar .nav__menu #burger-menu span::before {
