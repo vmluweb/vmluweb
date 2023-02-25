@@ -164,7 +164,8 @@ header {
     align-items: center;
     font-size: 30px;
     font-weight: 800;
-    text-shadow: 3px 3px 5px 5px $fifthColor;
+    // text-shadow: 3px 3px 5px 5px $fifthColor;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 
     a {
       height: 40px;
@@ -903,6 +904,7 @@ footer {
   .banniere__inner {
     font-size: 25px;
     font-weight: 800;
+
   }
 
   .presentation {
@@ -1052,7 +1054,7 @@ footer {
   }
 
   .banniere__inner {
-    font-size: 25px;
+    font-size: 1.45rem;
     font-weight: 800;
   }
 
